@@ -1,0 +1,80 @@
+% Bloco 1
+% Removendo um item de uma lista: remover( Item, Lista, Resultado).
+
+remover( A, [A | Cauda], Cauda).
+remover( A, [B | Cauda], [B | SubCauda]) :-
+	remover( A, Cauda, SubCauda).
+
+% Inserindo um item em uma lista:
+
+inserir(Item, Lista, Resultado):-
+	remover(Item, Resultado, Lista).
+
+% ou seja: o Resultado de inserir um Item na Lista surte o mesmo efeito de
+% remover o Item de uma lista com esse Resultado gerando a Lista da inserção.
+
+existe(Item,Lista):-
+	remover( Item, Lista , _ ).
+
+% ou seja: a resposta se um Item está presente na Lista pode ser obtida buscando
+% uma lista qualquer que seria o resultado de ter o Item removido da Lista.
+
+% Trocar a ordem de itens em uma lista pode ser obtido explorando possibilidades
+% de geração de sublistas sem um Item. As sublistas sem o Item são então
+% permutadas com os Outros elementos da lista de forma recursiva.
+
+permutar( [], [] ).
+permutar( [ Item | Outros ], Resultado) :-
+	permutar( Outros, OutroResultado),
+	remover( Item, Resultado, OutroResultado).
+
+% Alterando/Trocando um valor A por outro X em uma Lista e gerando um Resultado:
+% alterar(A, X, Lista, Resultado).
+
+alterar( A, X, [A | Cauda], [ X | Cauda] ).
+alterar( A, X, [B | Cauda], [B | SubCauda]) :-
+	alterar( A, X, Cauda, SubCauda).
+
+% Bloco 2
+concatenar( [], Lista, Lista).
+concatenar( [X | Outros], Lista2, [X | Resultado]):-
+	concatenar( Outros, Lista2, Resultado).
+
+sublista( Lista1, Lista):-
+	concatenar(Lista1,LX, Lista).
+sublista( Lista1, Lista):-
+	concatenar(LX, Lista1, Lista).
+
+sublista2( Lista1, Lista2):-
+	concatenar(LX, LY, Lista2),
+	concatenar(Lista1,LZ, LY).
+
+existe2(Item, Lista):-
+	concatenar( _ , [ Item | _ ], Lista).
+
+inverter( Lista, ListaInversa) :-
+	inverter( Lista, [], ListaInversa).
+inverter( [], Acumulador, Acumulador).
+inverter( [ Primeiro | Resto ], Acumulador, Resultado) :-
+	inverter( Resto, [ Primeiro | Acumulador ], Resultado).
+	
+tamanho_lista([], 0). 
+tamanho_lista([Cabeca|Cauda], N) :- 
+	N is 1 + tamanho_lista(Cauda).
+
+fatorial(0, 1).
+fatorial(N, F) :- N1 is N-1,
+			      fatorial(N1, F1),
+				  F is N * F1.
+
+insereElementoFinal(X, [], [X]).
+insereElementoFinal(X, [Z|Cauda], [Z|Cauda2]) :- 
+	insereElementoFinal(X, Cauda, Cauda2).
+
+insereElementoInicio(X, [], [X]).
+insereElementoInicio(X, [Z|Cauda], [X|Cauda2]) :- 
+	insereElementoInicio(Z, Cauda, Cauda2).
+
+
+
+
