@@ -1,0 +1,16 @@
+Exemplos de Planos de Projeto de Software:
+
+1. http://www4.ncsu.edu/~efg/Shimmer/projectplan.html
+2. http://www.rspa.com/docs/Projectplan.html
+3. http://www.srs.gov/general/enviro/erd/gen/contract/e7504.pdf 
+4. http://www.sss4d.com/Projects/100/plan100.pdf
+5. http://wilson.dcc.ufmg.br/praxis12/exemplos/documentos/Merci_10_PDSw.pdf
+
+
+
+4 grupos de 4 pessoas
+
+1. Health Watcher
+2. Siga Ensino
+3. Jardim Botanico
+4. 
