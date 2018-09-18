@@ -1,0 +1,71 @@
+
+Jefferson dos Santos Santana 
+31711ECA041
+
+questão 7 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    float aumento,salario;
+
+    printf("digite o salario");
+
+    scanf("%f",&salario);
+
+    if(salario<=500){
+
+    aumento=salario*0.30;
+
+    printf("aumento%.2f",aumento);
+
+
+    }
+    else
+        printf("voce ganha mais de 500 reias nao tem aumento");
+
+    return 0;
+}
+
+
+questão 12
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    float salariobruto,salariofinal;
+    printf("digite o salariobruto");
+    scanf("%f",&salariobruto);
+    if(salariobruto<=350){
+        salariofinal=salariobruto-(salariobruto*0.07)+100;
+
+    printf("salariofinal %f",salariofinal);}
+
+    else if(salariobruto>350&&salariobruto<600){
+
+    salariofinal=salariobruto-(salariobruto*0.07)+75;
+
+
+        printf("salariofinal %f",salariofinal);
+
+        }
+        else
+        if(salariobruto>=600&&salariobruto<=900){
+            salariofinal=salariobruto-(salariobruto*0.07)+50;
+            printf("salariofinal %f",salariofinal);
+        }
+    else
+    if(salariobruto>900){
+        salariofinal=salariobruto-(salariobruto*0.07)+35;
+        printf("salariofinal %f",salariofinal);
+
+    }
+    return 0;
+}

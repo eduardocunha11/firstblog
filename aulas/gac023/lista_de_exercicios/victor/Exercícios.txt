@@ -1,0 +1,153 @@
+Nome: Victor Hugo da Silva Lemos
+Matricula:31321ECA022
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//3 Faça um programa que receba a idade de oito pessoas, calcule e mostre:
+
+int main(){
+	int idade, i,cont=0, cont1=0, cont2=0, cont3=0,cont4=0;
+	float perc, perc1;
+	
+	for(i=1;i<=8;i++){
+		
+		printf("\nEntre com a idade: ");
+		scanf("%d", &idade);
+		
+		if(idade <= 15){
+			cont= cont + 1;
+		}
+		else if(idade > 15 && idade <= 30){
+			cont1= cont1 + 1;
+		}
+		else if(idade > 30 && idade <= 45){
+			cont2= cont2 + 1;
+		}
+		else if(idade > 45 && idade <= 60){
+			cont3= cont3 + 1;
+		}
+		else if(idade > 60){
+			cont4= cont4 + 1;
+		}
+	}
+	perc= (cont*100)  / 8;
+	perc1= (cont4*100)  / 8;
+	printf("Quantidade de pessoas idade < 15: %d", cont);
+	printf("Quatidade de pessoas idade entre 16 e 30: %i", cont1);
+	printf("Quatidade de pessoas idade entre 31 e 45: %i", cont2);
+	printf("Quatidade de pessoas idade entre 46 e 60: %i", cont3);
+	printf("Quatidade de pessoas idade acima de 60: %i", cont4);
+	printf("A porcentagem de pessoas na primeira faixa etaria eh: %.3f", perc);
+	printf("A porcentagem de pessoas na ultima faixa etaria eh: %.3f", perc1);
+	
+	return 0;
+	
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//16Faça um programa para calcular a área de um triângulo e que não permita a entrada de dados inválidos, ou seja,
+ medidas menores ou iguais a zero.//
+
+int main(){
+	int base, altura, area;
+	do
+	{
+		printf("Entre com a base do triangulo: ");
+		scanf("%i", &base);
+		printf("Entre com a altura do triangulo: ");
+		scanf("%i", &altura);
+		area= (base*altura) / 2;
+		printf("A area total e: %i", area);
+	} while (base > 0 && altura > 0);
+	return 0;#include <stdio.h>
+
+
+#include <stdlib.h>
+
+//19 faça um programa que leia um número não determinado de pares de valores [m,n], todos inteiros e positivos, 
+um par de cada vez, e que calcule e mostre a soma de todos os números inteiros entre m e n (inclusive). A digitação de pares 
+terminará quando m for maior ou igual a n.//
+
+int main(){
+	
+	int m,n,soma,i;
+	
+	do{
+	printf("Entre com um valor para m:");
+	scanf("%i", &m);
+	printf("Entre com um valor para n:");
+	scanf("%i", &n);
+	
+		for(i=m;i<n;i++){
+			soma= soma + 1;
+		}
+	printf("Resultado da soma: %d", soma);
+	soma= 0;
+	} while(m < n);
+	
+	
+	return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//24 Faça um programa que apresente o menu de opções a seguir, permita ao usuário escolher a opção desejada, receba os dados 
+necessários para executar a operação e mostre o resultado. Verifique a possibilidade de opção inválida e não se preocupe com 
+restrições do tipo salário inválido.//
+
+int main(){
+	int menu;
+	float sal,imposto;
+	
+	do{
+	printf("Menu de opcoes!\n");
+	printf("1- Imposto");
+	printf("2- Novo Salario\n");
+	printf("3- Classificacao\n");
+	printf("4- Finalizar Programa\n");
+	scanf("%d", &menu);
+	
+	if (menu == 1){
+		printf("\n\nEntre com o salario do funcionario: ");
+		scanf("%f", &sal);
+		if(sal < 500)
+		imposto= sal * 0.05;
+		else if (sal >= 500 && sal<= 850)
+		imposto= sal * 0.1;
+		else
+		imposto= sal *  0.15;
+		printf("\nValor do imposto: %.3f",imposto);
+	}
+	else if (menu == 2){
+		printf("\n\nEntre com o salario do funcionario: ");
+		scanf("%f", &sal);
+		if(sal > 1500)
+		sal= sal + 25;
+		else if(sal >= 750 && sal <= 1500)
+		sal= sal + 50;
+		else if(sal >= 450 && sal < 750)
+		sal= sal + 75;
+		else
+		sal= sal + 100;
+		printf("Salario com aumento: %.3f",sal);
+	}
+	else if (menu == 3){
+		printf("\n\nEntre com o salario do funcionario: ");
+		scanf("%f", &sal);
+		if(sal <= 700)
+		printf("\nMAL REMUNERADO!");
+		else if(sal > 700)
+		printf("\nBEM REMUNERADO!");
+	}
+	printf("\n\n");
+} while(menu >=1 && menu <=3);
+
+return 0;
+}

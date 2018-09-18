@@ -1,0 +1,99 @@
+Nome: Daniel Ferrari Oliveira
+Matrícula: 31621ECA004
+
+Cáp. 5 Ex. 16
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  float base = 0, altura = 0, area = 0;
+
+  do {
+     printf("Informe a base do triângulo: ");
+     scanf("%f", &base);
+     printf("Informe a altura do triângulo: ");
+     scanf("%f", &altura);
+
+     if (base <= 0 || altura <= 0) {
+         printf("\nENTRADA INVÁLIDA!\n\n");
+     }
+  } while(base <= 0 || altura <= 0);
+
+  area = (base * altura)/2;
+
+  printf("\nÁrea do triângulo: %.2f", area);
+
+  return 0;
+}
+
+
+Cáp. 5 Ex. 24
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+int main(){
+setlocale(LC_ALL,"Portuguese");
+
+int menu;
+float salario;
+
+printf("Escolha (1,2 ou 3) no menu abaixo:\n");
+printf("1 – Imposto\n");
+printf("2 – Novo Salário\n");
+printf("3 – Classificação\n");
+scanf("%d",&menu);
+
+switch(menu)
+{
+    case 1:
+    printf("Informe o salário do funcionário: ");
+    scanf("%f",&salario);
+
+        if(salario<500)
+        printf("O imposto sobre o salário é de 5%% e equivale a R$ %.2f\n",salario*0.95);
+
+        if(salario<=850 && salario>=500)
+        printf("O imposto sobre o salário é de 10%% e equivale a R$ %.2f\n",salario*0.90);
+
+        if(salario>850)
+        printf("O imposto sobre o salário é de 15%% e equivale a R$ %.2f\n",salario*0.75);
+    break;
+
+    case 2:
+    printf("Informe o salário do funcionário: ");
+    scanf("%f",&salario);
+
+        if(salario>1500)
+            printf("O salário sofre um aumento de R$ 25,00 e equivale a R$ %.2f\n",salario+25);
+
+        if(salario>=750 && salario<=1500)
+            printf("O salário sofre um aumento de R$ 50,00 e equivale a R$ %.2f\n",salario+50);
+
+        if(salario>=450 && salario<750)
+            printf("O salário sofre um aumento de R$ 75,00 e equivale a R$ %.2f\n",salario+75);
+
+        if(salario<450)
+            printf("O salário sofre um aumento de R$ 100,00 e equivale a R$ %.2f\n",salario+100);
+
+break;
+
+    case 3:
+    printf("Informe o salário do funcionário: ");
+    scanf("%f",&salario);
+
+        if(salario<=700)
+        printf("\nMal remunerado.\n\n");
+        else
+        printf("\nBem remunerado.\n\n");
+    break;
+
+    default:
+    printf("Opção inválida.\n");
+}
+system("pause");
+return 0;
+}

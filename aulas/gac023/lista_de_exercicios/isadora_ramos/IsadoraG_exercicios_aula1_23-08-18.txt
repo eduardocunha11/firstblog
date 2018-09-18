@@ -1,0 +1,62 @@
+ISADORA MARIA GONÇALVES RAMOS- 	31421ECA018-  27/08/2018
+
+
+
+/* 7- Faça um programa que decide dar um aumento de 30% nos salarios inferiores a R$500.
+Faca um programar que receba o salário do funcionário e mostre o valor do salario
+reajustado ou uma mensagem, caso ele não tenha direito de aumento.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ float sal, salreaj;
+ printf ("Digite seu salario:\n");
+ scanf ("%f", &sal );
+ if (sal<= 500){
+    salreaj = sal + (sal * 0.30);
+    printf ("Novo salario = %f\n", salreaj);
+ }
+ else {
+    printf ("Nao possui aumento.");
+ }
+
+    return 0;
+}
+
+
+/* 12- Faca um programa que receba o salario bruto de um funcionario e, usando a tabela, calcule e mostre
+o valor a receber. Sabe-se que este e composto pelo salario bruto acrescido de gratificação e descontado o
+imposte de 7% sobre o salario.
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float salbruto, salimp, nvsal;
+
+    printf("Digite seu salario:\n");
+    scanf ("%f", &salbruto);
+   if (salbruto <= 350) {
+        nvsal= salbruto +  100;
+        printf (" Novo salario = %f\n", nvsal); }
+    else if (salbruto > 350 && salbruto <= 600){
+        nvsal= salbruto +  75;
+        printf("Novo salario = %f\n", nvsal);
+    }
+
+    else if (salbruto> 600 && salbruto <= 900) {
+        nvsal= salbruto +  50;
+        printf("Novo salario = %f\n", nvsal);
+    }
+    else {
+         nvsal= salbruto +  30;
+        printf ("Novo salario = %f\n", nvsal);
+    }
+   salimp = nvsal - (nvsal * 0.07);
+   printf ("O salario sera = %f\n", salimp);
+    return 0;
+}

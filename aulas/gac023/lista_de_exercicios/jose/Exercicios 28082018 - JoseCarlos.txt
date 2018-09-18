@@ -1,0 +1,42 @@
+//  Nome: José Carlos de Moraes Pires * Matrícula: 31311ECA031 * Estrutura Condicional: Exercício 07 Capítulo 04 * Data de entrega: 28/08/2018
+
+
+	
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+    float salario;
+    printf(" Informe salario");
+    scanf("%f", &salario);
+    if (salario < 900){
+        printf("aumento R$ %.2f", (salario + (salario/100*30)) );
+    } else {
+    printf("não recebe reajuste");
+    }
+return 0;
+}
+
+
+
+//  Nome: José Carlos de Moraes Pires * Matrícula: 31311ECA031 * Estrutura Condicional: Exercício 12 Capítulo 04 * Data de entrega: 28/08/2018
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+    float salario;
+    printf(" Informe salario");
+    scanf("%f", &salario);
+    if (salario <= 350){
+        printf("valor a receber R$ %.2f", ((salario + 100)*0.93));
+    } else if (salario > 350 && salario < 600) {
+    printf("valor a receber R$ %.2f", ((salario + 75)*0.93));
+    } else if (salario >= 600 && salario <= 900) {
+    printf("valor a receber R$ %.2f", ((salario + 50)*0.93));
+    } else {
+    printf("valor a receber R$ %.2f", ((salario + 35)*0.93));
+    }
+    return 0;
+}
+

@@ -1,0 +1,82 @@
+Nome: Daniel Ferrari Oliveira
+
+Matrícula: 31621ECA004
+
+
+
+Capítulo 4 Exercício 7
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+main() {
+
+float reaj,sal, salreaj;
+
+printf(“Digite seu salário”, sal);
+scanf( “%f”, &sal);
+
+if (sal<500){
+reaj = sal+(sal*0.30);
+printf(“seu salario bonzao ´e: %2.f”,reaj);
+}
+else {
+printf (” o governo nao te ama”);
+}
+
+system(“pause”);
+}
+
+
+
+Capítulo 4 Exercício 12
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+float salario, result, gratificacao = 0;
+
+cout << "Entre com o salario do funcionario: " << endl;
+
+cin >> salario;
+
+result = salario*7/100;
+
+if(salario <= 350,00){
+
+gratificacao = 100;
+
+cout << " Sua gratificacao" << gratificacao;
+
+}
+
+else if(salario >= 350,01 && salario <= 600,00){
+
+gratificacao = 75;
+
+} else if(salario >= 600,01 && salario <= 900,00){
+
+gratificacao = 50;
+
+} else if(salario > 900,00){
+
+gratificacao = 35;
+
+}
+
+//result = salario + gratificacao;
+
+result = (salario - result) + gratificacao;
+
+cout << "O valor a ser recebido sera de: " << result << endl;
+
+system("PAUSE");
+
+return 0;
+
+}
+

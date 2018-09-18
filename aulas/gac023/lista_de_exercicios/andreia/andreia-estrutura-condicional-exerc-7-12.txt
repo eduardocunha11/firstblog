@@ -1,0 +1,133 @@
+/*Andreia Martins da Costa - 31321ECA003 - Capitulo 4 - Estrutura Condicional - exerc 7 p 63 */
+
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    int i;
+    float a,b,c;
+    printf("Digite valor de a:");
+    scanf("%f", &a);
+    printf("Digite valor de b:");
+    scanf("%f", &b);
+    printf("Digite valor de c:");
+    scanf("%f", &c);
+    printf("escolha uma opcao: 1- ordem crescente\n 2- ordem decrescente\n 3- o maior entre os outros dois numeros\n:");
+    scanf("%i", &i);
+    if (i ==1)
+    {
+        if (a<b && a<c){
+            if (b<c)
+            printf("Ordem crescente dos numeros e: %f %f %f\n", a,b,c);}
+            else {
+                printf("Ordem crescente dos numeros e: %f %f %f\n", a,c,b);}
+        if (b<a && b<c){
+            if (a<c)
+            printf("Ordem crescente dos numeros e: %f %f %f\n", b,a,c);}
+            else {
+                printf("Ordem crescente dos numeros e: %f %f %f\n", b,c,a);}
+        if (c<a && c<b){
+            if (a<b)
+            printf("Ordem crescente dos numeros e: %f %f %f\n", c,a,b);}
+            else {
+            printf("Ordem crescente dos numeros e: %f %f %f", c,b,a);}
+    }
+        if  (i == 2)
+         {
+             if (a>b && a>c)
+                if (b>c)
+                printf("A ordem descrecente e: %f %f %f\n", a,b,c);}
+                else{
+                    printf("A ordem descrescente e: %f %f %f\n", a,c,b);
+        }
+        if (b>a && b>c){
+            if (a>c)
+            printf("A ordem descrescente e: %f %f %f\n", b,a,c);}
+        else{
+            printf("A ordem descrescente e: %f %f %f\n", b,c,a);}
+            if (c>a && c>b){
+            if (a>b)
+            printf("A ordem descrescente e: %f %f %f\n", c,a,b);}
+                else {
+                printf ("A ordem descrescente e: %f %f %f\n", c,b,a);}
+                    if (i == 3) {
+                    if (a>b && a>c)
+                    printf("A ordem desejada e: %f %f %f\n", b,a,c);}
+                    if (c>a && c>b){
+                    printf("A ordem desejada e: %f %f %f\n", a,b,c);}
+                    if (c>a && c>b){
+                    printf("A ordem desejada e: %f %f %f\n", a,c,b);
+                    }
+
+}
+
+/*Andreia Martins da Costa - 31321ECA003 - Capitulo 4 - Estrutura Condicional - exerc 12 p 69 */
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main() {
+
+   	int cargo;
+	float salario, novosal, aumento;
+
+	printf("Digite o seu cargo:\n");
+	printf("1- Escriturario\n 2- Secretario\n 3- Caixa\n 4- Gerente\n 5- Diretor\n");
+	scanf("%i", &cargo);
+	printf("Digite o valor do salario: ");
+    scanf("%f", &salario);
+
+	switch (cargo) {
+
+        case 1:{
+            printf("O cargo e Escriturario");
+            aumento = ((salario * 1.5) - salario);
+            printf("O valor do aumento e: %f\n",aumento);
+            novosal = (salario * 1.5);
+            printf("O seu novo salario e: %f\n", novosal);
+            break;
+        }
+
+        case 2:{
+            printf("O cargo e Secretario");
+            aumento = ((salario * 1.35)- salario);
+            printf("O valor do aumento e: %f\n", aumento);
+            novosal = (salario * 1.35);
+            printf("O seu novo salario e: %f\n", novosal);
+            break;
+        }
+
+        case 3:{
+            printf("O cargo e Caixa");
+            aumento = ((salario * 1.2) - salario);
+            printf("O valor do aumento e: %f\n", aumento);
+            novosal = (salario * 1.2);
+            printf("O seu novo salario e: %f\n", novosal);
+            break;
+        }
+
+        case 4:{
+            printf("O cargo e Gerente");
+            aumento = ((salario * 1.1) - salario);
+            printf("O valor do aumento e: %f\n", aumento);
+            novosal = (salario * 1.1);
+            printf("O seu novo salario e: %f\n", novosal);
+            break;
+        }
+
+         case 5:{
+            printf("O cargo e Diretor");
+            aumento = ((salario * 1.10) - salario);
+            printf("O valor do aumento e: %f\n", aumento);
+            novosal = (salario * 1.10);
+            printf("O seu novo salario e: %f\n", novosal);
+            break;
+        }
+
+}
+   return 0;
+}
+
+
+
+

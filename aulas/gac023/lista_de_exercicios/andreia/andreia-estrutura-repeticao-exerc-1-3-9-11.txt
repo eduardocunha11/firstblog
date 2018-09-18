@@ -1,0 +1,114 @@
+/*Andreia Martins da Costa - 31321ECA003 - Capitulo 5 - Estrutura de Repetição - exerc 1 p 108 */
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main ()
+{
+    int i,anoatual, salario;
+    float novosal,percentual;
+    printf("Digite o ano atual:");
+    scanf("%i", &anoatual);
+    salario = 1000;
+    percentual=(1.5/100);
+    novosal= salario+percentual*salario;
+    for (i=2007; i<=anoatual; i++){
+        percentual=2*percentual;
+        novosal=novosal+percentual*novosal;
+    }
+    printf("O novo salario e: %f", novosal);
+    return 0;
+}
+
+/*Andreia Martins da Costa - 31321ECA003 - Capitulo 5 - Estrutura de Repetição - exerc 3 p 110 */
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main ()
+{
+    int num,fat,i,j,n;
+    printf("Digite o valor de n:\n");
+    scanf("%i", &n);
+    for (i=0 ; i<n; i++){
+        printf("\nDigite um numero para ser calculado o fatorial:\n");
+        scanf("%i", &num);
+        fat=1;
+        for (j=1; j<=num; j++){
+            fat= fat*j;
+        }
+        printf("O resultado do fatorial e: %i", fat);
+    }
+return 0;
+}
+
+/*Andreia Martins da Costa - 31321ECA003 - Capitulo 5 - Estrutura de Repetição - exerc 9 p 117 */
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main ()
+{
+    float i,nota, nota2, media, tr,te,ta, totclasse;
+    ta=0;
+    tr=0;
+    te=0;
+    totclasse=0;
+    for (i=0; i<6; i++){
+        printf("Digite sua primeira nota:\n");
+        scanf("%f", &nota);
+        printf("Digite sua segunda nota:\n");
+        scanf("%f", &nota2);
+        media=(nota+nota2)/2;
+        printf("\nA sua media e: %f\n", media);
+        if (media <= 3)
+        {
+          tr= tr+1;
+          printf("\nVoce esta Reprovado!\n");
+        }
+        	if (media>3 && media<7)
+        {
+            	te=te +1;
+        	printf("\nVoce esta de Exame!\n");
+        }
+        		if (media>=7)
+        {
+           		 ta= ta+1;
+            		 printf("\nVoce foi Aprovado!\n");
+        }
+        totclasse = totclasse + media;
+
+      }
+    printf("\nQuantidade de Reprovados e %f\n %f", tr);
+    printf("\nQuantidade de Exame e %f\n", te);
+    printf("\nQuantidade de Reprovados e %f\n", ta);
+    media = (totclasse)/6;
+    printf("\nA media da classe e: %f \n", media);
+    return 0;
+}
+
+
+/*Andreia Martins da Costa - 31321ECA003 - Capitulo 5 - Estrutura de Repetição - exerc 11 p 119 */
+
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    int i,num,qtd;
+    printf("Digite um número inteiro e positivo:\n");
+    scanf("%f", &numero);
+    qtd=0;
+    for (i=1; i<=numero; i++){
+                if (numero/i == 0){
+                qtd=qtd + 1;}
+
+            if (qtd>2){
+                printf("O Numero nao  e primo\n");}
+                  else
+            {
+                printf("O Numero e primo\n");}
+            }
+
+    return 0;
+
+}

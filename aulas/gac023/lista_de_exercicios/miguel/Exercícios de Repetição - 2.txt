@@ -1,0 +1,190 @@
+Miguel Domingos Pereira  31421ECA006 
+
+Exercícios de Estrutura de Repetição - 2
+
+Exercicio 16,19,24 & 03 
+
+data de entrega - 05/09/2018
+
+
+
+Questão 16
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int base,altura,area;
+
+
+    printf("entre com a base:\n");
+    scanf("%d",&base);
+    printf("entre com a altura:\n");
+    scanf("%d",&altura);
+   if(base > 0 && altura > 0)
+
+    {area=base*altura;
+
+    printf("valor da area e: %d\n", area);}
+
+    return 0;
+
+}
+
+
+
+Questão 03
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	int idade,c=0, c1=0, c2=0, c3=0,c4=0,i;
+	float perc, perc1;
+
+	for(i=1;i<=8;i++)
+        {
+
+		printf("Entre com a idade:\n ");
+		scanf("%d", &idade);
+
+		if(idade <= 15)
+		{
+			c= c + 1;
+		}
+                else
+                    if(idade > 15 && idade <= 30)
+                        {
+                    c1=c1 + 1;
+		}
+                        else
+                            if(idade > 30 && idade <= 45)
+                                {
+                            c2= c2 + 1;
+		}
+                                else
+                                    if(idade > 45 && idade <= 60)
+                                        {
+                                    c3= c3 + 1;
+		}
+                                        else
+                                            if(idade > 60)
+                                                {
+                                            c4= c4 + 1;
+		}
+	}
+	perc= (c*100)  / 8;
+	perc1= (c4*100)  / 8;
+	printf("Quantidade de pessoas idade < 15:\n %d\n", c);
+	printf("Quatidade de pessoas idade entre 16 e 30:\n %d\n", c1);
+	printf("Quatidade de pessoas idade entre 31 e 45:\n %d\n", c2);
+	printf("Quatidade de pessoas idade entre 46 e 60:\n %d\n", c3);
+	printf("Quatidade de pessoas idade acima de 60:\n %d\n", c4);
+	printf("A porcentagem de pessoas na primeira faixa etaria \n: %.2f\n", perc);
+	printf("A porcentagem de pessoas na ultima faixa etaria :\n %.2f\n", perc1);
+
+	return 0;
+
+}
+
+
+
+Questão 24
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	int menu;
+	float sal,imp;
+
+	{
+	printf("MENU DE OPCOES\n");
+	printf("1- Imposto\n");
+	printf("2- Novo Salario\n");
+	printf("3- Classificacao\n");
+	printf("4- Finalizar Programa\n");
+	scanf("%d", &menu);
+
+	if (menu == 1)
+        {
+            printf("Entre com o salario do funcionario:\n ");
+            scanf("%f", &sal);
+                if(sal < 500)
+                    imp= sal * 0.05;
+                    else
+                        if (sal >= 500 && sal<= 850)
+                    imp= sal * 0.1;
+                        else
+                        imp= sal *  0.15;
+                        {
+                        printf("Valor do imposto:\n %.2f",imp);
+                        }
+	}
+                            else
+                                if (menu == 2){
+                            printf("Entre com o salario do funcionario:\n ");
+                            scanf("%f", &sal);
+                                            if(sal > 1500)
+                                            sal= sal + 25;
+                                                else
+                                                    if(sal >= 750 && sal <= 1500)
+                                                sal= sal + 50;
+                                                    else
+                                                        if(sal >= 450 && sal < 750)
+                                                    sal= sal + 75;
+                                                        else
+                                                        sal= sal + 100;
+                                                        printf("Salario com aumento: %.2f",sal);
+	}
+                                                            else
+                                                                if (menu == 3){
+                                                                printf("Entre com o salario do funcionario:\n ");
+                                                                scanf("%f", &sal);
+                                                                    if(sal <= 700)
+                                                                    printf("Mal Remunerado:\n");
+                                                                        else
+                                                                            if(sal > 700)
+                                                                            printf("Bem Remunerado:\n");
+	}
+
+}                                                                           if(menu >=1 && menu <=3);
+
+return 0;
+}
+
+
+
+Questão 19
+
+
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+
+	int m,n,soma,i;
+
+	{
+	printf("Entre com um valor para M:\n");
+	scanf("%d", &m);
+	printf("Entre com um valor para N:\n");
+	scanf("%d", &n);
+	 if(m < n);
+	 soma= 0;
+
+		for(i<m;i<n;i++){
+                soma= soma + 1
+
+		}
+	printf("soma:\n %d\n", soma);
+
+	}
+
+
+	return 0;
+}
+
+

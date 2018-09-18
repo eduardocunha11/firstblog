@@ -1,0 +1,46 @@
+Exercício de Programação de Estrutura Funcional
+Rafael Cordeiro Pereira Mendonça - 31711ECA004
+Data: 27/08/2018
+
+Número 7:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+   int x, s;
+   printf("digite seu salario que mostraremos se havera o aumento e o novo valor\n ");
+   scanf("%d",&s);
+   x=s*1.3;
+   if(s<500){
+   printf("Havera aumento,seu salario sera de %d", x);}
+   else if(s>500){printf("Nao havera aumento, seu salario ja esta no limite");}
+   else if (s==500){ printf("Nao havera aumento, seu salario ja esta no limite");}
+    return 0;
+}
+
+Número 12:
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+float y;
+
+printf ("Digite seu salario bruto e mostraremos o valor com gratificacao e imposto:\n");
+scanf ("%f",&y);
+
+if (y<=350){
+    printf ("Sera seu salario final: %f", (y+100)*0.93);}
+
+    else if (y<350&&y<600)
+            printf ("Sera seu salario final: %f", (y+75)*0.93);
+    else if (y<=600&&y<=900)
+            printf ("Sera seu salario final: %f", (y+50)*0.93);
+    else {
+        printf ("Sera seu salario final: %f", (y+35)*0.93);}
+
+return 0;
+}

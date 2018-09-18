@@ -1,0 +1,82 @@
+Miguel Domingos Pereira  31421ECA006 
+
+Exercícios Estrutura Condicional 
+
+Exercício 7 & 12 Do Capitulo 4
+
+data de entrega - 28/08/2018
+
+EX 7 
+
+#include <stdio.h>
+#include <math.h>
+int main (){
+
+        float sal,reaj;
+        printf("Entre com valor do salario\n");
+        scanf("%f",&sal);
+            if (sal<=500){
+                reaj= sal +(sal*0,30);
+                 printf("Salario reajustado e: %.2f = ",reaj);
+                            }
+                            else
+                            if (sal>500){
+                                printf("  Funcionario nao tenha direito ao aumento. ");
+                                      }
+
+
+
+
+    return 0;
+}
+
+
+
+
+
+EX 12
+
+#include <stdio.h>
+#include <math.h>
+int main (){
+
+        float sal,grat,imp;
+        printf("Entre com valor do salario\n");
+        scanf("%f",&sal);
+
+
+            if (sal <= 350){
+
+                grat = 100;
+                printf  ( "Gratificacao e: %.2f = ", grat);
+            }
+
+                else
+                    if(sal >= 350,01 && sal <= 600){
+                    grat = 75;
+                    printf  ( "Gratificacao e: %.2f = ", grat);
+            }
+
+                    else
+                        if(sal>= 600,01 && sal < 900){
+                        grat= 50;
+                        printf  ( "Gratificacao e: %.2f = ", grat);
+            }
+
+                        else
+                            if(sal >= 900){
+                            grat = 35;
+                            printf  ( "Gratificacao e: %.2f = ", grat);
+            }
+
+
+                imp = sal- (sal * 0.07);
+                grat = imp + grat;
+
+
+
+                                printf ( "O novo salario recebido sera de:%.2f = " , grat);
+
+     return 0;
+}
+

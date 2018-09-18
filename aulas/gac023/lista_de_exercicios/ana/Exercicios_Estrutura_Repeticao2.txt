@@ -1,0 +1,147 @@
+﻿cap5_ex24_EstruturaRepeticao2
+
+#include<stdio.h>
+int main ()
+{
+    int op;
+    float sal, imposto, novo_sal;
+    printf("Menu de opoces:\n 1 - Imposto\n 2 - Novo salario\n 3 - Classificacao\n 4 - Finalizar Programa\n Digite a opcao desejada: ");
+    scanf("%d", &op);
+    switch (op){
+    case 1:
+        {
+            printf("Digite o valor do salario: ");
+            scanf("%f",&sal);
+            if (sal<500)
+                imposto = sal+(sal*0.05);
+            else if ((sal>=500)&&(sal<=850))
+                imposto = sal+(sal*0.10);
+            else
+                imposto = sal+(sal*0.15);
+            printf("O valor do imposto sobre o salario e: %.2f \n", imposto);
+            break;
+         }
+    case 2:
+        {
+            printf("Digite o valor do salario: ");
+            scanf("%f",&sal);
+            if (sal>1500)
+                novo_sal = sal+25;
+            else if (sal>=750 && sal<=1500)
+                novo_sal = sal+50;
+            else if (sal>=450 && sal<750)
+                novo_sal = sal+75;
+            else
+                novo_sal = sal+100;
+            printf("O valor do novo salario e: %.2f \n", novo_sal);
+            break;
+        }
+    case 3:
+        {
+            printf("Digite o valor do salario: ");
+            scanf("%f",&sal);
+            if (sal<=700)
+                printf("Mal remunerado! \n");
+            else
+                printf("Bem remunerado! \n");
+            break;
+        }
+    case 4:
+        {
+        printf("Finalizando programa...\n");
+        break;
+        }
+
+    default:
+        printf("Opcao invalida! \n");
+        break;
+    }
+    return 0;
+}
+//Exercicio extenso, porém tranquilo de resolver
+ //Eu não encontrei um comando para encerrar a janela de execução imediatamente
+
+
+
+cap5_ex3propostoEstruturaRepeticao2
+
+#include<stdio.h>
+int main()
+{
+    int f1,f2,f3,f4,f5,i, id;
+    float porcf1, porcf5;
+    f1=f2=f3=f4=f5=0;
+    for(i=0;i<8;i++){
+        printf("Digite uma idade %d: ",i+1);
+        scanf("%d",&id);
+        if (id<=15)
+            f1++;
+        else if (id>=16 && id<=30)
+            f2++;
+        else if (id>=31 && id<=45)
+            f3++;
+        else if (id>=46 && id<=60)
+            f4++;
+        else
+            f5++;
+        }
+        porcf1 = (f1*100)/8;
+        porcf5 = (f5*100)/8;
+        printf("Idade ate 15 anos: %d\nPorcentagem de menores de 15 anos: %.2f%%\n", f1, porcf1);
+        printf("Idade de 16 a 30 anos: %d\n", f2);
+        printf("Idade de 31 a 45 anos: %d\n", f3);
+        printf("Idade de 46 a 60 anos: %d\n", f4);
+        printf("Idade acima de 60 anos: %d\nPorcentagem de maiores de 60 anos: %.2f%%\n", f5, porcf5);
+
+    return 0;
+}
+//Tive dificuldade em realizar a estrutura condicional, pois estava esquecendo de incluir i+1 após a mensagem do printf
+
+
+cap5_ex16_EstruturaRepeticao2
+
+#include<stdio.h>
+int main()
+{
+    float b, h, a;
+    printf("Defina um valor para a base: ");
+    scanf("%f", &b);
+    printf("Defina um valor para a altura: ");
+    scanf("%f", &h);
+    if ((b>0) && (h>0)){
+        a = (b*h)/2;
+        printf("A area do triangulo e: %.2f",a);
+    }
+    else
+        printf("Valores invalidos!  ");
+
+    return 0;
+}
+//Exercicio bastante tranquilo de resolver
+
+
+
+
+cap5_ex19_EstruturaRepeticao2
+
+#include<stdio.h>
+int main()
+{
+    int i, m, n, soma;
+    printf("Digite dois valores:\n");
+    scanf("%d""%d", &m, &n);
+    while(m<=n){
+    soma = 0;
+    for(i=0;i<=n;i++){
+
+        soma = soma+i;
+        }
+    printf("A soma e: %d", soma);
+    scanf("%d",&m);
+    scanf("%d",&n);
+    }
+    return 0;
+}
+//Achei esse exercício complicado de entender
+
+

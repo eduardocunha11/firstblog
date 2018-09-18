@@ -1,0 +1,188 @@
+Programação Aplicada   -        04/09/18
+
+Isadora Maria Gpnçalves Ramos - 31421EECA018
+
+
+/* 16- Faça um programa para calcular a área de 
+um trinângulo sem a entrada de dados invalidos.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+float base=0, altura=0, area=0;
+
+do{
+    printf("Digite  a base: \n");
+    scanf("%f", &base);
+    printf ("Digite a altura: ");
+    scanf("%f", &altura);
+
+    if (base <=0 || altura <=0){
+        printf("\nNumero invalido!\n");
+    }
+
+} while (base <=0 || altura <=0);
+
+area = (base*altura)/2;
+printf ("Area do triangulo = %f", area);
+
+return 0;
+}
+/* 16- exercicio feito de maneira tranquila.*/
+
+
+
+
+
+/* 19- Faça um programa que leia um numero nao determinado de pares de valores [m,n], todos inteiros e positivos,
+um par de cada vez, e que calcule e mostre a soma de todos os numeros inteiros entre m e n(inclusive). A digitação de pares
+terminara quando m for maior ou igual a  n.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+    int m, n, i, soma;
+    printf("Digite os valores de M e N:\n");
+    scanf ("%i", &m);
+    scanf ("%i", &n);
+
+    while (m < n){
+        soma= 0;
+        for (i=m ; i<n; i++){
+
+            soma = soma + 1; }
+            printf(" 'm','n'  %i\n", soma);
+            printf("Informe um par de valores.\n");
+            scanf ("%i", &m);
+            scanf ("%i", n);
+    }
+
+
+return 0;
+}
+/* 19-Nesse exercicio tiver uma enormeee dificuldade em interpreta-lo, tive que pesquisar para enternder
+como que funcionava a logica e desenvolvimento.*/
+
+
+
+
+
+
+/* 24- Faça um programa que apresente o menu de opções a seguir , permita ao usuario escolher a opção
+desejada, receba os dados necessarios para executar a operação e mostre o resultado,
+verifique a possibilidade de numero invalido e não  preocupe com restrições do tipo salario invalido.
+Menu de opçoes:
+1- Imposto
+2- Novo salario
+3- Classificacao
+4- Sair
+Digite a opção desejada.
+Na opcao....
+*/
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+    float salario;
+    int sair, menu;
+    printf(" Escolha uma opcao no menu: \n");
+    printf("1- Imposto. \n");
+    printf("2- Novo salario. \n");
+    printf("3- Classificacao. \n");
+    printf("4- Sair\n");
+    scanf( "%i", & menu);
+    switch (menu)
+    {
+ case 1:
+     printf("Digite o salario do funcionario: \n");
+     scanf("%f", &salario);
+      if(salario<500)
+        printf("O imposto de 5% = R$ %.2f \n", salario*0.95);
+      else if (salario>= 500  && salario<=850)
+        printf("O imposto de 10% = R$ %.2f \n", salario*0.90);
+      else
+        printf("O imposto de 15% = R$ %.2f \n", salario*0.75);
+    break;
+
+     case 2:
+     printf("Digite o salario do funcionario: \n");
+     scanf("%f", &salario);
+      if(salario>1500)
+            printf("Aumento de R$ 25,00 = R$ %.2f \n", salario+25);
+      else if(salario<=1500 && salario>=750)
+            printf("Aumento de R$ 50,00 = R$ %.2f \n", salario+50);
+      else if(salario<750 && salario>= 450)
+            printf("Aumento de R$ 75,00 = R$ %.2f \n", salario+75);
+      else
+            printf("Aumento de R$,100,00 = R$ %.2f \n", salario+100);
+     break;
+
+     case 3:
+     printf(" Digite o salario do funcionario: \n");
+     scanf("%f", &salario);
+     if(salario<=700)
+        printf("\n Mal remunerado.\n");
+     else
+        printf("\n Bem remunerado.\n");
+     break;
+
+     case 4:
+         printf ("Programa finalizado! \n");
+
+
+     default:
+        printf("\n Opção invalida.\n");
+    }
+
+
+return 0;
+}
+
+/* 24- Exercicio medio, tive que ler varias vezes para entender e gastei um bom tempo para executa-lo */
+
+
+/* 03- Faça um programa que receba a idade de 8 pessoas, calcule e mostre:
+a) a quantidade de pessoas em cada faixa etaria.
+b) a porcentagem de pessoasna primeira faixa etaria com relação ao total.
+c) a porcentagem de pessoas na ultima faixa etaria com relação ao total.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+int i, idade, fx1=0, fx2=0, fx3=0, fx4=0, fx5=0;
+float porc1, porc5;
+ for (i=1; i<=8; i++){
+    printf ("Digite uma idade: \n");
+    scanf ("%i", &idade);
+    if (idade<= 15){
+        fx1++;
+    }
+    else if (idade >15 && idade <=30){
+        fx2++;
+    }
+    else if (idade >30 && idade <=46){
+        fx3++;
+    }
+    else if (idade >36 && idade <=60){
+        fx4++;
+    }
+    else
+        fx5++;
+}
+    porc1= fx1*100/8;
+    porc5= fx5*100/8;
+    printf ("Quantidade de pessoas na faixa 1 = %i pessoas \n", fx1);
+    printf ("Quantidade de pessoas na faixa 2 = %i pessoas \n", fx2);
+    printf ("Quantidade de pessoas na faixa 3 = %i pessoas \n", fx3);
+    printf ("Quantidade de pessoas na faixa 4 = %i pessoas \n", fx4);
+    printf ("Quantidade de pessoas na faixa 5 = %i pessoas \n", fx5);
+    printf ("A porcentagem na faixa 1 = %.2f%%\n", porc1);
+    printf ("A porcentagem na faixa 5 = %.2f%%\n", porc5);
+
+return 0;
+}
+
+/* Exercicio medio mais tranquilo, parecido com um realizado nas aulas anteriores.*/
