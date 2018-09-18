@@ -1,0 +1,8 @@
+G1: Amanda, Willian, Rafael, Ronaldo
+    (Health-Watcher)
+G2: Tulio, Marcos, Bruno, Igor
+    (Systrack)
+G3: João, César, Anage, Michel 
+    (Siga Ensino)
+G4: Andressa, Bruna, Eduardo, Mateus
+    (Sistema de Voos)

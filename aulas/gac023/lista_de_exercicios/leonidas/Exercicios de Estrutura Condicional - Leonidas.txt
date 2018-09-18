@@ -1,0 +1,74 @@
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Estrutura condicional
+// Exercicio 7
+// 24/08/2018
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+float sal_novo,x, aumento;
+
+printf("O salario atual e:");
+scanf("%f", &x);
+
+if (x<=500)
+{
+    aumento = (0.30*x);
+    sal_novo = (aumento + x);
+    printf("O novo salario: %f", sal_novo);
+}
+else
+{
+    printf("O funcionario ja recebe acima de 500,00");
+}
+
+    return 0;
+}
+
+
+
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Estrutura condicional
+// Exercicio 12
+// 24/08/2018
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+float sal, sal1, sal2, sal3, sal4;
+
+printf("Digite o valor do salario:");
+scanf("%f", &sal);
+
+if (sal<=350)
+{
+    sal1= (100+(sal-(0.07*sal)));
+    printf("O valor a receber e de: %f", sal1);
+}
+
+else if (sal>=351 && sal<=600)
+{
+     sal2= (75+(sal-(0.07*sal)));
+    printf("O valor a receber e de: %f", sal2);
+}
+
+else if (sal>=601 && sal<=900)
+{
+     sal3= (50+(sal-(0.07*sal)));
+    printf("O valor a receber e de: %f", sal3);
+}
+
+else if (sal>=901)
+{
+     sal4= (35+(sal-(0.07*sal)));
+    printf("O valor a receber e de: %f", sal4);
+}
+
+
+    return 0;
+}

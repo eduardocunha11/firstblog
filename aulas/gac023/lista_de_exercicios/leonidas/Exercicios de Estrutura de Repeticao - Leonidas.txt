@@ -1,0 +1,161 @@
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Estrutura de repetição
+// Exercicio 1
+// 02/08/2018
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int i;
+int anoatual=2018;
+int anoentrada=2005;
+float salario=1000;
+float percentual=0.015;
+
+
+for (i=anoentrada+1; i<=2018; i++)
+{
+    salario= salario + percentual*salario; // outro jeito de fazer salario + = percentual+salario
+    percentual= percentual*2; // outro jeito de fazer percentual * =2
+    printf("O salario ajustado e: %6.2f \n", salario);
+}
+
+    return 0;
+}
+
+
+
+
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Estrutura de repetição
+// Exercicio 3
+// 02/08/2018
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int num, n, fat, i, j;
+
+printf("Digite um valor:");
+scanf("%d", &n);
+
+for (i=1; i<=n; i++)
+{
+    scanf("%d",&num);
+    fat=1;
+    for (j=1; j<=num; j++)
+    {
+        fat= fat*j;
+    }
+printf("O fatorial de %d = %d\n", num, fat);
+}
+
+    return 0;
+}
+
+
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Estrutura de repetição
+// Exercicio 9
+// 02/08/2018
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+float x, n1, n2, media, mediatur, totalclasse;
+int tr, ta, te;
+
+
+
+for (x=0; x<6; x++)
+{
+    printf("digite a nota 1:");
+    scanf("%f", &n1);
+
+    printf("digite a nota 2:");
+    scanf("%f", &n2);
+
+    media=(n1+n2)/2;
+    printf("A media do aluno foi: %5.2f \n", media);
+
+        if (media<=3)
+        {
+            tr= tr+1;
+            printf("Reprovado\n");
+        }
+
+        else if(media>3 && media<7)
+            {
+                te= te+1;
+                printf("Exame");
+            }
+
+        else if(media>=7)
+            {
+                ta= ta+1;
+                printf("Aprovado");
+            }
+        totalclasse= totalclasse+media;
+
+}
+printf("Reprovado:%d", tr);
+
+printf("Reprovado:%d", ta);
+
+printf("Reprovado:%d", te);
+
+mediatur= mediatur/6;
+
+
+    return 0;
+}
+
+
+
+
+
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Estrutura de repetição
+// Exercicio 11
+// 02/08/2018
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int i, num;
+int div = 0;
+
+printf("digite um numero:");
+scanf("%d",&num);
+
+while (num <= 0);
+
+for (i=1; i<=num; i++)
+{
+    if (num%i == 0)
+    {
+        div = div+1;
+    }
+}
+    if (div == 2)
+        {
+            printf("numero %d primo", num);
+        }
+        else
+            printf("Numero %d nao primo", num);
+  return 0;
+}
+
+
+
+
+
