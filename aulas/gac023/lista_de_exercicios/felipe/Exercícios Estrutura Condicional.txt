@@ -1,0 +1,65 @@
+/*  Felipe Mundim de Oliveira
+    31411ECA022
+    Exercício 7
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float salario,SalarioReajustado;
+
+    printf("Digite o salario :");
+    scanf("%f", &salario);
+
+    if (salario<=500){
+        SalarioReajustado=salario*1.30;
+        printf("o salario Reajustado e %f\n\n",  SalarioReajustado);
+    }else {
+        printf("Não tem direito ao aumento!\n\n");
+    }
+
+    system ("pause");
+    return 0;
+}
+
+/*  Felipe Mundim de Oliveira
+    31411ECA022
+    Exercício 12
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float Salario,Imposto,SalarioNovo;
+
+    printf("Digite o salario :");
+    scanf("%f", &Salario);
+
+    if(Salario<=350.00){
+        Imposto=(Salario*1.07)-Salario;
+        SalarioNovo=(Salario-Imposto)+100.00;
+        printf("Imposto descontado e : %f\n\n",Imposto);
+        printf("O salario com Imposto descontado e com Gratificacao e: %f\n\n",SalarioNovo);
+    }
+    if(Salario>350.00&&Salario<=600.00){
+        Imposto=(Salario*1.07)-Salario;
+        SalarioNovo=(Salario-Imposto)+75.00;
+        printf("Imposto descontado e : %f\n\n",Imposto);
+        printf("O salario com Imposto descontado e com Gratificacao e: %f\n\n",SalarioNovo);
+    }
+    if(Salario>600.00&&Salario<=900.00){
+        Imposto=(Salario*1.07)-Salario;
+        SalarioNovo=(Salario-Imposto)+50.00;
+        printf("Imposto descontado e : %f\n\n",Imposto);
+        printf("O salario com Imposto descontado e com Gratificacao e: %f\n\n",SalarioNovo);
+    }
+    if(Salario>900.00){
+        Imposto=(Salario*1.07)-Salario;
+        SalarioNovo=(Salario-Imposto)+35.00;
+       printf("Imposto descontado e : %f\n\n",Imposto);
+        printf("O salario com Imposto descontado e com Gratificacao e: %f\n\n",SalarioNovo);
+    }
+
+    system ("pause");
+    return 0;
+}
