@@ -1,0 +1,177 @@
+PROGRAMAÇÃO APLICADA – 2018-2 
+Exercícios Lista 03 - Exercícios de 1 a 8 
+26 de setembro de 2018 
+Victor Hugo da Silva Lemos – 31321ECA022
+
+
+Exercício 01.  
+#include <stdio.h> #include <stdlib.h> 
+int main(){ 
+    int vet[6],i; 
+    for( i = 0; i < 6; i++){
+     printf("\n Digite valor:");
+     scanf("%d",&vet[i]);
+     } 
+    for(i=5;i>=0;i--){
+     printf("\n valor: %d",vet[i]);
+     } 
+return 0; 
+}  
+
+Exercício 02. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int vet[6], i;
+    for(1==0; i<6; i++){
+    printf("Digite um numero!\n");
+    scanf("%d", &vet[i]);
+    }
+    for(1==0; i<6; i++){
+    printf("\n %d", vet[i]);
+    }
+    return 0;
+}
+
+Exercício 03. 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    float vetA[10], vetB[10];
+    int i;
+    for(i==0; i<10; i++){
+    printf("Digite um numero!\n");
+    scanf("%f", &vetA[i]);
+    }
+    for(i==0; i<10; i++){
+        vetB[i] = vetA[i]*vetA[i];
+    }
+    for(i==0; i<10; i++){
+        printf("vetorA %f", vetA[i]);
+        printf("\n vetorB", vetB[i]);
+    }
+
+    return 0;
+}
+
+Exercício 04. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int vetA[8], soma=0;
+    int i, x, y;
+    for( i==0; i<8; i++){
+    printf("Digite um numero!\n");
+    scanf("%d", &vetA[i]);
+    }
+    printf("\n Digite i valor de x[o-7]");
+    scanf("%d", &x);
+    if (x>=0 && x<7){
+        printf("Digite o valor de Y [0-7]");
+        scanf("%d", &y);
+        if (y>=0 && y<7){
+            soma = vetA[x]+vetA[y];
+            printf("A soma e: %d", soma);
+        }
+        else{
+            printf("O valor de Y esta invalido");
+        }
+        else{
+            printf("O valoe de X esta invalido")
+        }
+    }
+Exercício 05.  
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <math.h> 
+int main(){ 
+    float vetA [10], resultado [10];
+     int j;  
+    for( j = 0; j < 10; j++){ 
+    printf("\n Digite valor:"); 
+    scanf("%f",&vetA_[j] );     
+	} 
+    for( j = 0; j < 10; j++){
+     resultado_[j] = vetA_[j] * vetA [i];
+     } 
+    for( j = 0; j < 10; j++){
+     printf("\n vetA %f ",vetA_[j] );
+     printf("\n  valor: %.3f",resultado_[j]);
+     }     
+return 0; 
+} 
+
+Exercício 06.  
+
+#include <stdio.h> 
+#include <stdlib.h>
+int main(){ 
+    int vet_[10], j, maior, menor;  
+    for ( j = 0; j < 10; j++){
+     printf("\n Digite valor:");
+     scanf("%d", &vet [j] );
+     }
+     maior = vet [0]; 
+    for( j = 1; j < 10; j++){
+     if( vet[j] > maior){
+     maior = vet[j];
+     }
+     }  
+    for( j = 0; j < 10; j++){
+     if( vet [j] < menor){
+     menor = vet [j];
+     }
+     } 
+    printf("\n maior %d",maior);
+    printf("\n menor %d",menor); 
+return 0; 
+} 
+
+Exercício 07.  
+
+#include <stdio.h> 
+#include <stdlib.h>
+ int main(){ 
+    int vet_[10], j, maior, posicao;  
+    for( j = 0; j < 10; j++){ 
+    printf("\n Digite valor:");  
+    scanf("%i",&vet_[j]);
+     }     
+maior = vet_[0];
+    for( j = 1; j < 10; j++){
+     if( vet_[j] > maior){
+     maior = vet_[j];
+     posicao = j;
+     }
+     }
+     printf("\n maior %i",maior);
+     printf("\n posicao %i",posicao); 
+return 0;
+ }  
+
+Exercício 08.
+  
+#include <stdio.h> 
+#include <stdlib.h> 
+int main(){ 
+    int vet_[6],j; 
+    for( j = 0; j < 6; j++){
+     printf("\n Digite valor:");
+     scanf("%i",&vet_[j]);
+     }     
+    for(j==5; j>=0; j--){
+     printf("\n valor %i",vet_[j]);
+     } 
+return 0;
+ }   
+ 
+ 
