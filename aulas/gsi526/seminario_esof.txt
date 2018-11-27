@@ -1,0 +1,4 @@
+1. Padrões de criação (Felipe)
+2. Padrões estruturais (Leiriele)
+3. Padrões comportamentais (Emanuel)
+
