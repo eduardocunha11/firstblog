@@ -1,1 +1,9 @@
-Parei na Pag. 5 ("Aula 9 - Testes de Unidade")
+Parei na Pag. 7 ("Aula 9 - Testes de Integração e Testes de Sistema")
+
+Proximo: Falar sobre Testes de Desenvolvimento
+
+
+LUANA THOMAZETTO ROSSATO
+
+
+CPF 082.992.896-02
