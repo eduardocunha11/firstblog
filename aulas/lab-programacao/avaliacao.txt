@@ -1,11 +1,6 @@
-Projeto Arquitetural e Modelagem => 30
-Implementação => 30
-Apresentação Parcial => 20 
-Apresentação Final => 20
+Datas dos trabalhos de POO
 
-Total: 100 pontos
+T1 - 05/09 - valor 30
+T2 - 17/10 - valor 35 
+T3 - 28/11 - valor 35
 
-Projeto Arquitetural e Modelagem - 30 pts (12/09)
-Apresentação Parcial - 20 pts (24/10)
-Implementação - 30 pts (Até 27/11) 
-Apresentação Final - 20 pts (Dias 20/11 e 27/11)
