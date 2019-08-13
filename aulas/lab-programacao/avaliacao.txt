@@ -1,0 +1,11 @@
+Projeto Arquitetural e Modelagem => 30
+Implementação => 30
+Apresentação Parcial => 20 
+Apresentação Final => 20
+
+Total: 100 pontos
+
+Projeto Arquitetural e Modelagem - 30 pts (12/09)
+Apresentação Parcial - 20 pts (24/10)
+Implementação - 30 pts (Até 27/11) 
+Apresentação Final - 20 pts (Dias 20/11 e 27/11)
