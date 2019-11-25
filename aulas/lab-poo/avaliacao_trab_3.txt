@@ -1,0 +1,197 @@
++++++++++++++++++++++++++++++++ 1. Cadastrar Usuário +++++++++++++++++++++++++++++++
+
+Nome: Amanda Dias
+E-mail: amanda@gmail.com
+Nascimento: 29/04/1987
+Login: amanda
+
+Nome: Afonso Henrique
+E-mail: afonso@gmail.com 
+Nascimento: 22/08/1989
+Login: afonso
+
+Nome: Lais Almeida
+E-mail: lais@gmail.com   
+Nascimento: 23/09/1986
+Login: lais
+
+Nome: Paulo Nogueira
+E-mail: paulo@gmail.com   
+Nascimento: 21/02/1988
+Login: paulo
+
+Nome: Valentina Silva
+E-mail: valentina@gmail.com
+Nascimento: 08/09/1987
+Login: valentina
+
+
++++++++++++++++++++++++++++++++ 2. Listar Usuários +++++++++++++++++++++++++++++++
+
+Lista os 5 usuários da rede social: amanda, afonso, lais, paulo e valentina.
+
+
++++++++++++++++++++++++++++++++ 3. Seguir Usuário ++++++++++++++++++++++++++++++++
+
+loginA: amanda
+loginB: paulo
+
+Paulo é seguidor de Amanda.
+
+loginA: amanda
+loginB: lais
+
+Lais é seguidor de Amanda.
+
+loginA: amanda
+loginB: afonso
+
+Afonso é seguidor de Amanda.
+
+loginA: paulo
+loginB: amanda
+
+Amanda também é seguidora de Paulo.
+
+loginA: afonso
+loginB: lais
+
+Lais é seguidora de Afonso.
+
+loginA: afonso
+loginB: paulo
+
+Paulo é seguidor de Afonso.
+
+loginA: amanda
+loginB: valentina
+
+Valentina é seguidora de Amanda.
+
+
++++++++++++++++++++++++++++++++ 4. Exibir o mais influente ++++++++++++++++++++++++
+
+Login: amanda
+Nome: Amanda Dias
+Qtd. de seguidores: 4 (valentina, paulo, lais e afonso)
+
+
++++++++++++++++++++++++++++++++ 5. Registrar Mensagem +++++++++++++++++++++++++++++
+
+Cenário (A)
+
+loginA: afonso
+mensagem: (Mensagem excede os 140 caracteres)
+
+O fim de semana chegou e como estamos quase no fim do mês de novembro, 
+é possível que a grana esteja curta. Sem poder esbanjar nos rolês, 
+muita gente opta por ficar em casa para assistir a um bom filme ou série. 
+Se essa é a sua realidade, calma, não se desespere: além das estreias no 
+cinema e das novidades na Netflix, todo sábado o Canaltech lista os 
+melhores lançamentos para assistir online em serviços como o Amazon 
+Prime Video e Telecine, além de plataformas de vídeo sob demanda 
+como Play Store, iTunes e Looke.
+
+Cenário (B)
+
+loginA: afonso
+mensagem:
+
+Além das estreias no cinema e das novidades na Netflix, todo sábado o 
+Canaltech lista os melhores lançamentos de filmes.
+
+loginA: afonso
+mensagem:
+
+Um dos filmes mais surpreendentes lançado em 2019, Atentado ao Hotel Taj Mahal
+conta uma história real comovente.
+
+loginA: afonso
+mensagem:
+
+Para fechar a rodada de indicações do que assistir no fim de semana, 
+um drama pesado e repleto de humor negro: Coringa.
+
+loginA: amanda
+mensagem:
+
+O gasto médio dos consumidores na Black Friday deve ser de R$ 1.132, segundo pesquisa.
+
+
++++++++++++++++++++++++++++++++ 6. Ver Mensagens +++++++++++++++++++++++++++++++
+
+loginA: afonso
+
+Deverá exibir todas as 3 mensagens do Afonso sobre filmes e mais a 
+mensagem sobre Black Friday postada por Amanda (amiga de Afonso).
+
+
+++++++++++++++++++++++++++++++ 7. Comentar Mensagem ++++++++++++++++++++++++++++
+
+Cenário (A)
+
+loginA: afonso
+
+Seleciona a mensagem com Id: 3 (texto sobre o filme Coringa)
+
+loginB: valentina
+
+Valentina não é seguidora de Afonso. Por isso, o sistema não deve
+permitir ela comentar um post do Afonso!!!
+
+
+Cenário (B)
+
+loginA: afonso
+
+Seleciona a mensagem com Id: 3 (texto sobre o filme Coringa)
+
+loginB: lais
+
+Lais é seguidora de Afonso. Dessa forma, pode registrar comentario(s)
+sobre algum post do Afonso.
+
+comentario: 
+
+Gostei muito do filme! O ator Joaquin Phoenix fascina e hipnotiza o 
+espectador desde a primeira cena em que aparece.
+
+
+++++++++++++++++++++++++++++++ 8. Ver Mensagens ++++++++++++++++++++++++++++++
+
+loginA: amanda
+
+Deve exibir a unica mensagem dela sobre Black Friday.
+A Amanda até segue o Paulo, porém ele não postou nada 
+na rede social.
+
+
+++++++++++++++++++++++++++++ 9. Excluir Usuário ++++++++++++++++++++++++++++++
+
+loginA: amanda
+
+A Amanda deverá ser removida da rede social e das listas
+de Valentina, Paulo, Lais e Afonso.
+
+
+++++++++++++++++++++++++++++++ 10. Ver Mensagens +++++++++++++++++++++++++++++
+
+loginA: amanda
+
+O Login foi excluído no passo anterior. Logo, a mensagem sobre 
+Black Friday que a Amanda havia postado também deverá sair!!!
+
+
+++++++++++++++++++++++++++++++ 11. Cancelar Seguir +++++++++++++++++++++++++++
+
+loginA: afonso
+loginB: lais 
+
+Lais e seguidora de Afonso e será removida da lista de seguidores do Afonso. 
+
+
+++++++++++++++++++++++++++++++ 12. Ver Seguidores ++++++++++++++++++++++++++++
+
+loginA: afonso
+
+Afonso ficará com apenas 1 seguidor agora: Paulo.
