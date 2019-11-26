@@ -1,0 +1,87 @@
+++++++++++++++++++++++++++++++++++++ 1. Cadastrar Aluguel de Casa ++++++++++++++++++++++++++++++++++++
+ 
+Qtd. quartos: 4
+Qtd. suítes: 1
+Qtd. salas de estar: 1
+Nro de vagas na garagem: 1
+Área (em metros quadrados): 140
+Possui Armário Embutido: Sim
+Descrição: 
+
+O imóvel fica próximo do Colégio Santa Maria e do Museu Giramundo.
+
+Endereço completo:
+
+Rua Varginha, 321
+Bairro: Colégio Batista
+Cidade: Belo Horizonte-MG
+Valor de Aluguel: R$ 2.200,00
+
+++++++++++++++++++++++++++++++++++++ 2. Cadastrar Aluguel de Casa ++++++++++++++++++++++++++++++++++++
+
+
+Qtd. quartos: 2
+Qtd. suítes: 2
+Qtd. salas de estar: 1 
+Nro de vagas na garagem: 1
+Área (em metros quadrados): 100
+Possui Armário Embutido: Não
+Descrição: 
+
+O imóvel está localizado a cerca de 330 metros do Shopping Oiapoque.
+
+
+Endereço completo:
+Rua Álvaro Costa, 270
+
+Bairro: Colégio Batista
+Cidade: Belo Horizonte-MG
+Valor de Aluguel: R$ 1.200,00
+
+
+++++++++++++++++++++++++++++++++++++ 3. Cadastrar Aluguel de Apto ++++++++++++++++++++++++++++++++++++ 
+
+Qtd. quartos: 3
+Qtd. suítes: 1
+Qtd. salas de estar: 0
+Qtd. salas de jantar: 1
+Nro de vagas na garagem: 1
+Área (em metros quadrados): 57
+Possui armário embutido: Não 
+Descrição:
+
+O imóvel fica proximo do Hospital Alberto Cavalcanti.
+
+Andar: 2º andar (Apto 202)
+Valor do condomínio: R$ 250
+Possui portaria 24h: Não
+
+Endereço completo: Rua Vila Rica, 730
+
+Bairro: Jardim Montanhes
+Cidade: Belo Horizonte-MG
+Valor de Aluguel: R$ 1.200,00
+
+
+++++++++++++++++++++++++++++++++++++ 4. Cadastrar Aluguel de Apto ++++++++++++++++++++++++++++++++++++ 
+
+Qtd. quartos: 3
+Qtd. suítes: 1
+Qtd. salas de estar: 1
+Qtd. salas de jantar: 1
+Nro de vagas na garagem: 1
+Área (em metros quadrados): 70
+Possui armário embutido: Sim
+Descrição:
+
+Em frente ao supermercado DIA, farmácia, sacolao e academia.
+
+Andar: 3º andar (Apto 301)
+Valor do condomínio: R$ 200,00
+Possui portaria 24h: Sim
+
+Endereço completo: Rua Francisco Bicalho, 623
+
+Bairro: Caiçara
+Cidade: Belo Horizonte-MG
+Valor de Aluguel: R$ 1.500,00
