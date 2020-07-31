@@ -1,0 +1,32 @@
+Disciplina de PC2
+
+Slides da Kecia por serem mais simples e diretos.
+
+Playlist: https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY
+
+Videoaulas do Gustavo Guanabara
+
+Aula 1 - O que é um Objeto?
+
+https://www.youtube.com/watch?v=aR7CKNFECx0&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=3
+
+Aula 2 - Criando Classes e Objetos em Java
+
+https://www.youtube.com/watch?v=wNaoX6VOj54&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=4
+
+Aula 3 - O que é Visibilidade em um Objeto?
+
+https://www.youtube.com/watch?v=jFI-qqitzwk&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=6
+
+Aula 4 - Configurando Visibilidade de Atributos e Métodos
+
+https://www.youtube.com/watch?v=LV2243j4RTQ&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=7
+
+Aula 5 - Métodos Especiais
+
+https://www.youtube.com/watch?v=g2x9oyBFSco&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=8
+
+Aula 6 - Métodos Getter, Setter e Construtor
+
+https://www.youtube.com/watch?v=6i-_R5cAcEc&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=9
+
