@@ -1,0 +1,8 @@
+package com.cefet.exercicios;
+
+public class Teste {
+	
+	private String nome;
+	private Integer idade;
+
+}
