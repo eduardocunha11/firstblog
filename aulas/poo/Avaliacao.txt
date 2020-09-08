@@ -1,6 +1,0 @@
-Datas das provas de POO
-
-P1 - 05/09 - valor 30 
-P2 - 17/10 - valor 35 
-P3 - 21/11 - valor 35
-
