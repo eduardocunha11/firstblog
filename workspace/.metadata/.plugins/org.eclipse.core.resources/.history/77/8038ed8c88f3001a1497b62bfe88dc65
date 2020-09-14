@@ -1,0 +1,15 @@
+
+public class Produto {
+	
+	private Long identificador;
+	private String nome;
+	private String descricao;
+	
+	public Produto(Long id, String name, String desc) {
+		identificador = id;
+		nome = name;
+		descricao = desc;
+	}
+	
+
+}

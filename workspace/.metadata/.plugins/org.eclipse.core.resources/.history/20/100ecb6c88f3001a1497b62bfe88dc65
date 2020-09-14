@@ -1,0 +1,8 @@
+
+public class Produto {
+	
+	private Long identificador;
+	
+	
+
+}

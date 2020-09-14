@@ -1,0 +1,11 @@
+
+public class Produto {
+	
+	private Long identificador;
+	private String nome;
+	private String descricao;
+	
+	
+	
+
+}

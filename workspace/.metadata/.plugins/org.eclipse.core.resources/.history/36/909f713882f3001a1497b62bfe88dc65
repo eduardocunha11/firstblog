@@ -1,0 +1,10 @@
+
+public class Aluno {
+	
+	private String nome;
+	 private String matricula;
+	 private String situacao;
+	 private int idade;
+	 private static int idadeMinima = 18; 
+
+}

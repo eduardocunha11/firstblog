@@ -1,0 +1,40 @@
+
+public class Aluno {
+	
+	private String nome;
+	private String matricula;
+	private String situacao;
+	private int idade;
+	private static int idadeMinima = 18; 
+	
+	public Aluno (String n, String m, int id) {
+		nome = n;
+		matricula = m;
+		situacao = "Nao matriculado";
+		
+		if (id >= idadeMinima)
+		 idade = id;
+		else
+		 idade = 0;
+	}
+
+	public void alterarNome(String n){
+		 nome = n;
+	}
+
+	public String obterNome(){
+		 return nome;
+	}
+
+	public void matricular(){
+		 situacao = "Matriculado";
+	}
+
+	public void cancelarMatricula(){
+		 situacao = "Nao matriculado";
+	}
+	
+	
+
+
+}
