@@ -18,11 +18,11 @@ public class Principal {
 	private static List<String> BUFFER = new ArrayList<String>();
  	private static final String INPUT = PATH + SEPARATOR + "questoes.txt";
 	private static final String OUTPUT = PATH + SEPARATOR + "resultado.txt";
-	private static final String GAB_TIPO_1[] = {"c","d","a","e","d","c","d"};
-	private static final String GAB_TIPO_2[] = {"d","c","d","e","a","d","c"};
-	private static final Double VALOR_QUESTAO_TIPO_1[] = {3.5,3.5,3.5,3.5,3.5,3.5,4.0};
-	private static final Double VALOR_QUESTAO_TIPO_2[] = {4.0,3.5,3.5,3.5,3.5,3.5,3.5};
-	
+	private static final String GAB_TIPO_1[] = {"","","","","","",""};
+	private static final String GAB_TIPO_2[] = {"","","","","","",""};
+	private static final Double VALOR_QUESTAO_TIPO_1[] = {4.0,4.0,5.0,5.0,5.0};
+	private static final Double VALOR_QUESTAO_TIPO_2[] = {5.0,5.0,5.0,4.0,4.0};
+
 	
 	public static void main(String[] args) {
 		
