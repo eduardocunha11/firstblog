@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+     Produto produtos[] = new Produto[100];
+     Produto produto = null;
+     
+     Scanner scan = new Scanner(System.in);
+     
+     Integer opcao = null;
+     Integer codigo, qtdDisponivelEstoque;
+     Integer qtdProdutos, posicoesVazias = 100;
+     Integer contadorProdutos = 0, idProduto = 0;
+     String nome, descricao;
+     Double precoVenda;
+    
+
+     do {
+
+       System.out.println("1. Adicionar um produto");
+       System.out.println("2. Encontrar o produto com o maior preço de venda");
+       System.out.println("3. Encontrar o produto com a maior quantidade disponivel no estoque");
+       System.out.println("4. Encontrar um dado produto atraves do seu codigo de identificacao");
+       System.out.println("5. Alterar o preco de venda de um dado produto");
+       System.out.println("6. Listar todos os produtos pelo nome em ordem alfabetica");
+       System.out.println("7. Sair");
+
+       System.out.println("Digite uma opcao: ");
+       opcao = scan.nextInt(); 
+
+      switch (opcao) {
+        case 1: System.out.println("Quantos produtos deseja cadastrar?");
+                qtdProdutos = scan.nextInt();
+
+                if (qtdProdutos <= posicoesVazias) {
+
+                    for (int i = 0; i < qtdProdutos; i++) {
+                      idProduto = idProduto + 1;
+
+                       System.out.println("Digite o nome do produto: ");
+                       nome = scan.next();
+
+                       System.out.println("Digite a descricao do produto:");
+                       descricao = scan.next();
+
+                       produto = new Produto();
+                       produto.setCodigo(idProduto);
+                       produto.setNome(nome);
+                       produto.setDescricao(descricao);
+
+                       produtos[contadorProdutos] = produto;
+                       contadorProdutos++;
+                       posicoesVazias--; 
+                    }
+                }
+
+                break;
+          
+        case 2:
+                 break;
+          
+        case 3:
+                break;
+        case 4:
+                break;
+        case 5:
+                break; 
+        case 6:
+                break;
+
+        case 7: break;
+
+        default: System.out.println("Opcao Invalida!");
+                 break;
+      }
+
+
+
+     } while (opcao != 7);
+
+  }
+}
