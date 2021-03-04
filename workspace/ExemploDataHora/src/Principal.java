@@ -5,11 +5,11 @@ public class Principal {
 	public static void main(String[] args) {		
 			
 		Calendar c = Calendar.getInstance();
-		c.set(Calendar.YEAR, 2020);
-		c.set(Calendar.MONTH, Calendar.OCTOBER);
-		c.set(Calendar.DAY_OF_MONTH, 22);
+		c.set(Calendar.YEAR, 2021);
+		c.set(Calendar.MONTH, Calendar.MARCH);
+		c.set(Calendar.DAY_OF_MONTH, 2);
 	
-		c.set(Calendar.HOUR_OF_DAY, 15);
+		c.set(Calendar.HOUR_OF_DAY, 12);
 		c.set(Calendar.MINUTE, 30);
 		c.set(Calendar.MILLISECOND, 0);
 
@@ -24,10 +24,15 @@ public class Principal {
 		 */
 		
 		Calendar c2 = Calendar.getInstance();
-		c2.set(Calendar.YEAR, 2020);
-		c2.set(Calendar.MONTH, Calendar.OCTOBER);
-		c2.set(Calendar.DAY_OF_MONTH, 22);
+		c2.set(Calendar.YEAR, 2021);
+		c2.set(Calendar.MONTH, Calendar.MARCH);
+		c2.set(Calendar.DAY_OF_MONTH, 2);
 
+		c2.set(Calendar.HOUR_OF_DAY, 13);
+		c2.set(Calendar.MINUTE, 25);
+		c2.set(Calendar.MILLISECOND, 0);
+
+		
 		System.out.println("Data/Hora atual: "+c2.getTime());
 		System.out.println("Ano: "+c2.get(Calendar.YEAR));
 		System.out.println("Mês: "+c2.get(Calendar.MONTH));

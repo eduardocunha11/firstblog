@@ -7,7 +7,7 @@ import java.util.Date;
 public class ConversaoDatas {
 	
 	public static void main(String[] args) {
-		Calendar calendar = Calendar.getInstance();
+		/*Calendar calendar = Calendar.getInstance();
 		DateFormat formatter = DateFormat.getDateInstance();
 		
 		Date data2;
@@ -20,7 +20,7 @@ public class ConversaoDatas {
 		}
 		
 		Date data = calendar.getTime();
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
 		System.out.println("Data formatada: "+sdf.format(data));
 		
 		//Converte Objetos
@@ -30,7 +30,7 @@ public class ConversaoDatas {
 			System.out.println("Data convertida: " + data3);
 		} catch (ParseException e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 	}
 
