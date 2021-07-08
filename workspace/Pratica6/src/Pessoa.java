@@ -3,7 +3,7 @@ public class Pessoa {
 	
 	private String nome;
 	private Endereco endereco;
-	private String email;
+	private String email; 
 	
 	public Pessoa() {
 		

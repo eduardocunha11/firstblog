@@ -10,7 +10,13 @@ public class Principal {
 		
 		Scanner scan2 = new Scanner(System.in);
 		
-		List<Pessoa> agenda = new ArrayList<Pessoa>();
+		List<Pessoa> agenda = new ArrayList<Pessoa>(); // Alocação Dinâmica de Memória
+		
+		Pessoa[] agenda = new Pessoa[100]; // Alocação Estática de Memória
+		
+		//List<PessoaFisica> pessoas = new ArrayList<PessoaFisica>();
+		
+		//List<PessoaJuridica> empresas = new ArrayList<PessoaJuridica>();
 				
 		Integer opcao;
 		String nome;
@@ -70,10 +76,10 @@ public class Principal {
 		} while (opcao != 11);
 		
 		
-	}
+	} // fim do método Main()
 
 	private static void cadastrarPessoaJuridica(Scanner scan, Scanner scan2, List<Pessoa> agenda) {
-		
+		// Falta implementar este metodo!!!!
 		
 	}
 
@@ -133,6 +139,7 @@ public class Principal {
 		
 		// Adicionar o objeto PessoaFisica na lista
 		pessoas.add(pessoa);
+		
 		
 		System.out.println("Registro cadastrado com sucesso!");
 
