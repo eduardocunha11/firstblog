@@ -1,0 +1,42 @@
+Roteiros de Aulas Práticas para a disciplina de Laboratório de Engenharia de Software I
+
+== Roteiro 1 == 
+
+Micro-Livraria: Exemplo Prático de Microsserviços
+
+https://github.com/aserg-ufmg/micro-livraria
+
+
+== Roteiro 2 == 
+
+Pub-Sub-Store: Exemplo Prático de Arquitetura Publish/Subscribe
+
+
+https://github.com/aserg-ufmg/pub-sub-store
+
+
+== Roteiro 3 == 
+
+Aula Prática de TDD
+https://github.com/mtov/AulaPraticaTDD
+
+
+== Roteiro 4 == 
+
+Mini-Roteiro Prático sobre Testes End-to-End usando Cypress
+
+https://github.com/aserg-ufmg/demo-cypress
+
+
+== Roteiro 5 == 
+
+Aula Prática sobre Refactoring
+https://github.com/mtov/AulaPraticaRefactoring
+
+
+== Roteiro 6 == 
+
+Demo-CI: Aula Prática sobre Servidores de Integração Contínua
+
+https://github.com/aserg-ufmg/demo-ci
+
