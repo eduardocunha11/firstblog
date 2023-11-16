@@ -1,0 +1,40 @@
+Construção de Software: compiladores; ambientes integrados de desenvolvimento (IDEs); 
+depuradores; gerenciadores de bancos de dados; ferramentas para construção de interfaces.
+
+
+Reengenharia de software: evolução de software; manutenção de software; engenharia reversa; refatoração; bad smells.
+
+
+
+Reuso de software e suas técnicas: frameworks; biblioteca de programas; linha de produtos de software; sistemas orientados a serviços; desenvolvimento dirigido por modelos; integração de COTS; geradores de programas; desenvolvimento orientado a aspectos; empacotamento de sistemas legados; desenvolvimento baseado em componentes.
+
+
+Qualidade de Software: débito técnico, garantia de qualidade de software, verificação e validação;
+confiabilidade de software.
+
+
+Estratégias e testes de software: teste de unidade; teste de integração; teste de validação; teste de sistema.
+
+
+Gestão de configuração de software: Sistemas de Controle de Versão
+
+
+?? Princípios de projeto: Coesão, Acoplamento, Ocultamento de Informação, Integridade conceitual, etc.
+
+
+Técnicas de Revisão de Código
+
+
+DevOps e Implantação de Software
+
+
+Melhoria do processo de software: SPI, CMMI, MPS.BR, etc.
+
+Modelos e Normas de Qualidade de Software]
+
+ ISO 9001
+ MPS-BR
+ CMMI
+ SPICE (ISO/IEC 15504)
+ Seis Sigma
+
