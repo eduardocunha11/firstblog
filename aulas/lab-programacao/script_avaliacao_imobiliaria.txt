@@ -85,3 +85,14 @@ Endereço completo: Rua Francisco Bicalho, 623
 Bairro: Caiçara
 Cidade: Belo Horizonte-MG
 Valor de Aluguel: R$ 1.500,00
+
+
+++++++++++++++++++++++++++++++++++++ 5. Agendar Visita de Apto +++++++++++++++++++++++++++++++++++++++ 
+
+Data da visita: 13/02/2025
+Horário: 10:00
+
+1) Informe os dados do visitante. Exemplo: Seu nome completo, celular, etc.
+2) Clique no botão "Agendar". 
+3) O sistema deverá exibir uma mensagem na tela confirmando a visita.
+
