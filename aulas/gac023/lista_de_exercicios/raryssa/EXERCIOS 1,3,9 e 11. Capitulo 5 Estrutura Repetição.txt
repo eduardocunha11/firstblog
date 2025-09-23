@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Nome: Raryssa Hellem Cardoso Martins. Nº: 31321ECA007
+// EXERCIOS 1,3,9 e 11. Capitulo 5: Estrutura Repetição
+// Data: 03/09/2018
+
+// Exercicio 1
+
+int main()
+{
+    int i, ano_atual;
+    float novo_salario, percentual, salario;
+    printf("Digite o ano atual:");
+    scanf("%d",&ano_atual);
+    salario = 1000;
+    percentual = 0.015;
+    novo_salario = (salario+percentual * salario);
+    for (i=2007; i<=ano_atual; i++ ){
+        percentual= (2*percentual);
+        novo_salario=(novo_salario+percentual * novo_salario);}
+        printf("Novo salário %.2f", novo_salario);
+
+    return 0;
+
+// Exercicio 3
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ int i,j,n,num,fat;
+  printf("Digite um valor para n:");
+  scanf("%d", &n);
+  for (i=0; i<n; i++){
+    printf(" Digite um numero :");
+    scanf("%f",num);
+    fat= 1;
+    for (j=0; j<num; j++){
+        fat=fat*j;
+        printf(" Fatorial do valor %d",fat);
+    }
+  }
+  printf(" Fatorial do valor %d",fat);
+
+    return 0;
+}
+
+// Exercicio 9
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ int i,tr=0,te=0,ta=0;
+  float nota1,nota2,media,total_classe=0;
+
+    for(i=0; i<6; i++){
+        printf("Digite a primeira nota do aluno:");
+        scanf("f%",nota1);
+        printf("Digite a segunda nota do aluno:");
+        scanf("f%",nota2);
+        media=((nota1+nota2)/2);
+        printf("A média do aluno é",media);
+        if (media<=3){
+            tr= tr+1;
+            printf("Aluno Reprovado!!!");
+        }
+        if (media>3 && media<7){
+            te= te+1;
+            printf("Fará Exame!!!");
+        }
+        if (media >=7){
+            ta= ta+1;
+            printf("Aluno Aprovado!!!");
+        }
+       total_classe= total_classe + media;
+    }
+    printf("Quantidade de alunos reprovados %d",tr);
+    printf("Quantidade de alunos que fará exame %d",te);
+    printf("Quantidade de alunos reprovados %d",ta);
+
+}
+
+// Exercicio 11
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float resto,quant;
+    int i,numero;
+    scanf("%d",&numero);
+    quant=0;
+    for (i=0; i<numero; i++){
+            resto=(numero/i);
+        if (resto=0){
+            quant= (quant + 1);}
+            if (quant>2){
+                printf(" Este número nao é primo!!");}
+                else {
+                    printf("Este número nao primo!!");}
+    }
+
+
+    return 0;
+}
+
+

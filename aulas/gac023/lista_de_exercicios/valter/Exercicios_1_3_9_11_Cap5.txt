@@ -1,0 +1,121 @@
+Nome: Valter Nascimento Felizardo Neto
+Matricula: 31321ECA019
+Data de Entrega: 27/08/2018
+Exercicio: 1,3,9 e 11 cap 5
+Tema: Estrutura de Repetição
+
+// Exercicio 1
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int i;
+int ano_atual=2018;
+int ano_entrada=2005;
+float salario=1000;
+float percentual=0.015;
+
+     for(i=ano_entrada+1;i<=2018;i++){
+        salario=salario+percentual*salario;
+        percentual=percentual*2;
+        printf("O salario no ano %i sera de %.2f \n", i, salario);
+     }
+    return 0;
+}
+
+// Exercicio 3
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ int n,num,j,fat;
+  int i;
+    printf("Quantos valores inteiros e positivos devem ser lidos a seguir: ");
+    scanf("%i",&n);
+    for(i=1;i<=n;i++){
+                printf("Digite o %i valor: ",i);
+                scanf("%i",&num);
+                    fat= 1;
+                        for(j=1;j<=num;j++){
+                            fat = fat * j;
+                                }
+                         printf("O seu fatorial e: %i\n",fat);
+                        }
+
+    return 0;
+}
+
+// Exercicio 9
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+float cont,n1,n2,media,media_classe,total_classe,aprovado,reprovado,exame,ta;
+    total_classe=0;
+    for (cont=1;cont<=6;cont++){
+        printf("Nota da prova 1: \n\n");
+        scanf("%f",&n1);
+        printf("\nNota da prova 2: \n\n");
+        scanf("%f",&n2);
+        media=(n1+n2)/2;
+        if (media<=3){
+            reprovado=(reprovado+1);
+            printf("\nReprovado \n\n");
+        }
+        else if (media>3 & media<7){
+            exame=(exame+1);
+            printf("\nExame \n\n");
+        }
+        else if (media>=7){
+            ta=(ta+1);
+            aprovado=(aprovado+1);
+            printf("\nAprovado \n\n");
+        }
+        total_classe= total_classe + media;
+    }
+        printf("\nTotal de alunos reprovados: %.2f \n",reprovado);
+
+        printf("\nTotal de alunos de exame : %.2f \n",exame);
+
+        printf("\nTotal de alunos aprovados: %.2f \n",ta);
+
+        media_classe= (total_classe/6);
+
+        printf("\nA media da classe foi: %f \n",media_classe);
+
+    return 0;
+}
+
+// Exercicio 11
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,num,qtde,resto;
+        printf("Digite um numero inteiro maior que 1: ");
+        scanf("%i",&num);
+        printf("Um numero so e primo quando divisivel por 1 e por ele mesmo sendo seu resto = 0");
+        qtde=0;
+        i=1;
+        for(i==1;i<=num;i++){
+                resto= num%i;
+            printf("\nO resto da div por %i e: %i",i,resto);
+            if(resto==0){
+                qtde=qtde+1;
+            }
+        }
+            if(qtde>2)
+                printf("\nO numero %i nao e primo!\n",num);
+            else
+                printf("\nO numero %i e primo!\n",num);
+
+    return 0;
+}

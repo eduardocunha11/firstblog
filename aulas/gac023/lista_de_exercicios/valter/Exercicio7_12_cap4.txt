@@ -1,0 +1,67 @@
+Nome: Valter Nascimento Felizardo Neto
+Matricula: 31321ECA019
+Data de Entrega: 27/08/2018
+Exercicio: 7 e 12 cap 4
+Tema: Estrutura Condicional
+
+//Exercicio 7
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ float salario,reajustado;
+    printf("Entre com o seu salario, se menor que R$ 500,00 voce tem direito ao reajuste de 30 porcento, caso ao contrario nao tera direito!\n");
+    scanf("%f",&salario);
+        if(salario < 500){
+            reajustado=salario+((salario*30)/100);
+            printf("O valor do seu salario reajustado sera de %f",reajustado);
+            }
+        else{
+            printf("Seu salario e maior ou igual a 500 reais, logo nao recebera reajuste");
+        }
+    return 0;
+}
+
+//Exercicio 12
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ float x,salario,salario_desc;
+  int perfil;
+    printf("Digite o seu salario bruto:\n");
+    scanf("%f",&x);
+    if (x<=350){
+            salario = x+100;
+            salario_desc = salario-(salario*7)/100;
+            perfil = 1;
+    }
+    else if (x>350&x<600){
+            salario = x+75;
+            salario_desc = salario-(salario*7)/100;
+            perfil = 2;
+    }
+    else if (x>=600&x<=900){
+            salario = x+50;
+            salario_desc = salario-(salario*7)/100;
+            perfil = 3;
+    }
+    else if (x>900) {
+            salario = x+35;
+            salario_desc = salario-(salario*7)/100;
+            perfil = 4;
+    }
+    switch(perfil){
+
+        case 1:printf("O Salario final com a gratificacao e descontos sera: %.2f",salario_desc); break;
+        case 2:printf("O Salario final com a gratificacao e descontos sera: %.2f",salario_desc); break;
+        case 3:printf("O Salario final com a gratificacao e descontos sera: %.2f",salario_desc); break;
+        case 4:printf("O Salario final com a gratificacao e descontos sera: %.2f",salario_desc); break;
+
+    default: printf("este digito nao corresponde a um numero");
+    }
+
+    return 0;
+}

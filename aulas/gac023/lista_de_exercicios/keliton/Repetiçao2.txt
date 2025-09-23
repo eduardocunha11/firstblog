@@ -1,0 +1,168 @@
+EXERCICIOS 16,19,24 E 03 (PROPOSTO) DO CAP. DE ESTRUTURA DE REPETIÇAO
+
+
+Exercicio 03 (proposto)
+
+#include <stdio.h>
+
+int main()
+{
+    int id, i, fe1=0, fe2=0, fe3=0, fe4=0, fe5=0, porc1, porc5;
+
+    for(i=0; i<8; i++)
+    {
+        printf("\nDigite a Idade:");
+        scanf("%i",&id);
+
+        if(id<=15)
+            fe1=fe1+1;
+        else if((id>15) && (id<=30))
+            fe2=fe2+1;
+            else if((id>30) && (id<45))
+            fe3=fe3+1;
+        else if((id>45) && (id<=60))
+            fe4=fe4+1;
+            else if(id>60)
+               fe5=fe5+1;
+    }
+    printf("\n1° faixa etaria ate 15 anos:%i",fe1);
+    printf("\n2° faixa etaria de 16 a 30 anos:%i",fe2);
+    printf("\n3° faixa etaria de 31 a 45 anos:%i",fe3);
+    printf("\n4° faixa etaria de 46 a 60 anos:%i",fe4);
+    printf("\n5° faixa etaria acima 60 anos:%i",fe5);
+
+    porc1= (fe1*100)/8;
+    printf("\nPorcentagem da Primeira Faixa Etaria em relacao ao todo:%i",porc1);
+
+    porc5= (fe5*100)/8;
+    printf("\nPorcentagem da Ultima Faixa Etaria em relacao ao todo:%i",porc5);
+
+    return 0;
+}
+=========================================================================================================
+EXERCICIO 16
+
+#include <stdio.h>
+
+int main()
+{
+    float a, b, h;
+
+    do
+    {
+    printf("\nDigite a Altura");
+    scanf("%f",&h);
+
+    }while(h<0);
+
+    do{
+    printf("\nDigite a Base:");
+    scanf("%f",&b);
+
+    } while(b<0);
+    a=(b*h)/2;
+
+    printf("\nArea do Triangulo:%f",a);
+
+    return 0;
+}
+
+
+==========================================================================================================
+EXERCICIO 19
+
+#include <stdio.h>
+
+int main()
+
+{
+int i, m, n, soma;
+
+printf("\nDigite um valor para M:");
+scanf("%i",&m);
+
+printf("\nDigite um valor para N:");
+scanf("%i",&n);
+
+while(m<n){
+    soma=0;
+
+    for(i=m; i<=n; i++)
+    {
+        soma=soma+i;
+    }
+    printf("\nSoma:%i",soma);
+    printf("\nDigite um valor para M:");
+scanf("%i",&m);
+
+printf("\nDigite um valor para N:");
+scanf("%i",&n);
+}
+ return 0;
+}
+=======================================================================================================
+EXERCICIO 24
+
+#include <stdio.h>
+
+int main()
+{
+    int op;
+    float sala, imp, novo;
+
+    do{
+
+        printf("\nMenu de Opcoes:");
+        printf("\n1- Imposto");
+        printf("\n2- Novo Salario");
+        printf("\n3- Classificacao");
+        printf("\n4- Finalizar Programa");
+
+        printf("\nDigite a opcao desejada:");
+        scanf("%i",&op);
+
+        if((op>4)&&(op<1))
+            printf("Opcao Invalida");
+
+        if(op==1){
+            printf("\nDigite o salario:");
+            scanf("%f",&sala);
+
+            if(sala<500)
+                imp=(sala*0.05);
+            else if((sala>=500) && (sala<=850))
+                    imp=(sala*0.10);
+                    else if(sala>850)
+                        imp=(sala*0.15);
+            printf("\nimposto:%f",imp);
+        }
+        if(op==2){
+            printf("\nDigite o salario:");
+            scanf("%f",&sala);
+
+            if(sala>1500)
+                novo=sala+25;
+            else if((sala>=750)&&(sala<=1500))
+                novo=sala+50;
+            else if((sala>=450)&&(sala<=750))
+                novo=sala+75;
+                else if(sala<450)
+                    novo=sala+100;
+                printf("\nSalario com Aumento:%f",novo);
+        }
+
+         if(op==3){
+            printf("\nDigite o salario:");
+            scanf("%f",&sala);
+
+            if(sala<=700)
+                printf("Mal remunerado");
+            else
+                printf("Bem remunerado");
+
+        }
+    }while(op!=4);
+
+    return 0;
+}
+

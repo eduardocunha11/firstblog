@@ -1,0 +1,110 @@
+﻿cap5_1_EstruturaRepeticao
+
+#include<stdio.h>
+int main ()
+{
+    int i, ano_inicial, ano_atual;
+    float sal, p;
+    p = 0.015;
+    printf("Digite quando o funcionario foi contratado (Nao dever ser inferior a 2005):");
+    scanf("%d",&ano_inicial);
+    printf("Digite o ano atual: ");
+    scanf("%d",&ano_atual);
+    printf("Informe o salario inicial (Não dever ser inferior a R$1000.00: ");
+    scanf("%f",&sal);
+    for (i=ano_inicial;i<=ano_atual;i++)
+        if(i!=ano_inicial)
+            {
+            p = p*2;
+            sal = (sal+(sal*p));
+
+            }
+    printf("O salário atual do funcionario e: %.2f",sal);
+    return 0;
+}
+
+cap5_3_EstruturaRepeticao
+
+#include<stdio.h>
+int main()
+{
+    int num, n, i, j, fat;
+    printf("Quantos numeros serao lidos? ");
+    scanf("%d", &n);
+    for(i=1;i<=n;i++)
+        {
+        printf("Digite um numero: ", i);
+        scanf("%d", &num);
+        fat = 1;
+            for(j=1;j<=num;j++){
+            fat = fat*j;
+            printf("O fatorial de %d = %d \n", num, fat);
+            }
+        }
+    return 0;
+}
+
+
+cap5_9_EstruturaRepeticao
+
+#include<stdio.h>
+int main ()
+{
+    int i, ta, te, tr;
+    float n1, n2, media, mclass, total;
+    total = 0;
+    tr = 0;
+    ta = 0;
+    te = 0;
+    for (i=0;i<6;i++)
+    {
+        printf("Digite a primeira nota: ");
+        scanf("%f", &n1);
+        printf("Digite a segunda nota: ");
+        scanf("%f", &n2);
+        media = (n1+n2)/2;
+        printf("Media = %f \n",media);
+        if (media <=3)
+            {
+                printf("Aluno REPROVADO \n\n");
+                tr = tr+1;
+            }
+        else if (media>3 && media<7)
+            {
+                printf("Aluno de EXAME \n\n");
+                te = te+1;
+            }
+        else
+            {
+                printf("Aluno APROVADO \n\n");
+                ta = ta+1;
+            }
+        total = total+media;
+    }
+    printf("Total de alunos aprovados = %d \n",ta);
+    printf("Total de alunos de exames = %d \n",te);
+    printf("Total de alunos reprovados = %d \n",tr);
+    mclass = total/6;
+    printf("A media da classe e: %.2f \n",mclass);
+    return 0;
+}
+
+cap5_11_EstruturaRepeticao
+
+#include <stdio.h>
+int main ()
+{
+    int i, n, cont, q;
+    q = cont = 0;
+    printf ("Digite um numero inteiro: ");
+    if (scanf ("%d", &n) != 1)
+    return -1;
+    for (i=2; i<n;i++,cont++)
+        if (n % i == 0)
+        q = 1;
+    if (!q)
+        printf ("O numero e primo!\n", n);
+    else
+        printf ("O numero NAO e primo!\n", n);
+    return 0;
+}

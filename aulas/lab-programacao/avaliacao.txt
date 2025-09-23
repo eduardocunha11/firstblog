@@ -1,0 +1,6 @@
+Datas dos trabalhos de POO
+
+T1 - 05/09 - valor 30
+T2 - 17/10 - valor 35 
+T3 - 28/11 - valor 35
+

@@ -1,0 +1,148 @@
+Nome: Isadora Ribeiro de Souza
+Matrícula: 31421ECA017
+Data: 22/08/2018
+Capítulo 4: Estrutura Condicional
+
+Exercício 7: Faça um programa que receba quatro valores: I, A, B e C. Desses valores, I é inteiro e positivo, A B e C são reais.
+Escreva os números A, B e C obedecendo à tabela a seguir. Suponha que o valor digitado para I seja sempre um valor válido, 
+ou seja, 1, 2 ou 3, e que os números digitados sejam diferentes um do outro.
+
+#include <stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main(){
+
+int i;
+float a, b, c;
+
+printf("Digite um numero (1, 2 ou 3): ");
+scanf("%d", &i);
+printf("\nDigite o valor de A: ");
+scanf("%f", &a);
+printf("\nDigite o valor de B: ");
+scanf("%f", &b);
+printf("\nDigite o valor de C: ");
+scanf("%f", &c);
+switch(i){
+    case 1:
+        if(a<b && a<c){
+            if(b<c)
+                printf("\nOrdem crescente e: %5.1f %5.1f %5.1f", a, b, c);
+            else
+                printf("\nOrdem crescente e: %5.1f %5.1f %5.1f", a, c, b);
+        }
+         if(b<a && b<c){
+            if(a<c)
+                printf("\nOrdem crescente e: %5.1f %5.1f %5.1f", b, a, c);
+            else
+                printf("\nOrdem crescente e: %5.1f %5.1f %5.1f", b, c, a);
+        }
+         if(c<a && c<b){
+            if(a<b)
+                printf("\nOrdem crescente e: %5.1f %5.1f %5.1f", c, a, b);
+            else
+                printf("\nOrdem crescente e: %5.1f %5.1f %5.1f", c, b, a);
+        }
+    break;
+
+    case 2:
+        if(a>b && a>c){
+            if(b>c)
+                printf("\nOrdem decrescente e: %5.1f %5.1f %5.1f", a, b, c);
+            else
+                printf("\nOrdem decrescente e: %5.1f %5.1f %5.1f", a, c, b);
+        }
+         if(b>a && b>c){
+            if(a>c)
+                printf("\nOrdem decrescente e: %5.1f %5.1f %5.1f", b, a, c);
+            else
+                printf("\nOrdem decrescente e: %5.1f %5.1f %5.1f", b, c, a);
+        }
+         if(c>a && c>b){
+            if(a>b)
+                printf("\nOrdem decrescente e: %5.1f %5.1f %5.1f", c, a, b);
+            else
+                printf("\nOrdem decrescente e: %5.1f %5.1f %5.1f", c, b, a);
+        }
+    break;
+
+    case 3:
+        if (a>b && a>c){
+            printf("\nOrdem desejada e: %5.1f %5.1f %5.1f", b, a, c);
+			if (b>a && b>c)
+                printf("\nOrdem desejada e: %5.1f %5.1f %5.1f", a, b, c);
+			if (c>a && c>b)
+                printf("\nOrdem desejada e: %5.1f %5.1f %5.1f", a, c, b);
+        }
+    break;
+
+    default:
+			 printf("\nValor Invalido!!");
+ }
+ printf("\n");
+return 0;
+}
+
+
+
+Exercício 12: Faça um programa que receba o código correspondente ao cargo de um funcionário e seu salário atual
+e mostre o cargo, o valor do aumento e seu novo salário. Os cargos estão na tabela a seguir.
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main(){
+
+int cargo;
+float sal, aumento, novo_sal;
+
+printf("Digite o cargo do funcionario (1, 2, 3, 4 ou 5): ");
+scanf("%d", &cargo);
+printf("Digite o salario do funcionario: ");
+scanf("%f", &sal);
+
+switch(cargo){
+		 case 1:
+			 printf("\nCargo Escriturario");
+			 aumento = sal * 50 / 100;
+			 printf("\nO valor do aumento: %5.2f", aumento);
+			 novo_sal = sal + aumento;
+			 printf("\nNovo salario: %5.2f", novo_sal);
+			 break;
+		 case 2:
+			 printf("\nCargo Secretario");
+			 aumento = sal * 35 / 100;
+			 printf("\nO valor do aumento: %5.2f", aumento);
+			 novo_sal = sal + aumento;
+			 printf("\nNovo salario: %5.2f", novo_sal);
+			 break;
+		 case 3:
+			 printf("\nCargo Caixa");
+			 aumento = sal * 20 / 100;
+			 printf("\nO valor do aumento: %5.2f", aumento);
+			 novo_sal = sal + aumento;
+			 printf("\nNovo salario: %5.2f", novo_sal);
+			 break;
+		 case 4:
+			 printf("\nCargo Gerente");
+			 aumento = sal * 10 / 100;
+             printf("\nO valor do aumento: %5.2f", aumento);
+			 novo_sal = sal + aumento;
+			 printf("\nNovo salario: %5.2f", novo_sal);
+			 break;
+		 case 5:
+			 printf("\nCargo Diretor");
+			 aumento = sal * 0 / 100;
+			 printf("\nO valor do aumento: %5.2f", aumento);
+			 novo_sal = sal + aumento;
+			 printf("\nNovo salario: %5.2f", novo_sal);
+			 break;
+		 default:
+			 printf("\nCargo Invalido!!");
+	}
+printf("\n");
+return 0;
+}
+

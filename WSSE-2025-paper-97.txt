@@ -1,0 +1,34 @@
+Title: "A Systematic Literature Review on the Application of Scrum in Application Development"
+
+Authors: Harlene Luy Fook, Althea Aquilino and Micah Angela Cagas.
+
+============================================================================================
+
+ABSTRACT:
+
+This study presents a systematic literature review (SLR) on the application of Scrum
+in software development. To achieve this purpose, the authors considered articles 
+published between 2019 and 2025, sourced from IEEE Xplore and ScienceDirect databases.
+Findings reveal that Scrum is widely used to enhance agile project management, 
+enable incremental software delivery, and improve team collaboration.
+
+* STRENGTHS:
+
++ The study presented three very clear and defined research questions.
++ The authors carefully examined the relevant information from each research paper.
++ The search strategy adopted by the authors was transparent, carefully describing 
+the databases used as well as the keywords considered to filter the research papers.
++ Eligibility Criteria, such as inclusion and exclusion of studies and their respective 
+types, are clear and well defined for the SLR.
++ Data Analysis was very well conducted and discussed for each of the three research 
+questions considered.
+
+
+* WEAKNESSES:
+
+- Non-Comprehensive and Biased Search: Only two databases were considered in the study.
+Research papers from the ACM Digital Library were not considered, for example.
+- A large number of papers published between 1995 (emergence of the agile SCRUM method) 
+and 2019 (base year of this systematic research) were not considered. For future research,
+authors should include more longitudinal studies and studies from other digital libraries,
+such as: DBLP Computer Science bibliography, ACM Digital Library, Web Of Science, etc.

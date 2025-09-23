@@ -1,0 +1,99 @@
+CAPÍTULO 5 - ESTRUTURA DE REPETIÇÃO
+
+Nome: Monara Nogueira Silva
+Matrícula: 31521ECA001
+Data: 05/09/2018
+
+exercicio 16
+
+#include <stdio.h>
+int main () {
+
+float base, altura, area;
+do {
+    printf("digite a base: ");
+    scanf("%f", &base);
+}while (base <=0);
+do {
+    printf("digite a altura: ");
+    scanf("%f", &altura);
+}while (altura <=0);
+area= base*altura/2;
+printf("A area do triangulo e: %f ", area);
+return 0;
+}
+
+exercicio 19
+#include <stdio.h>
+int main(){
+int m, n, soma, i;
+printf("Entre com dois numero positivos e inteiros:\n");
+scanf("%d" "%d", &m, &n);
+while (m < n) {
+    soma = 0;
+    for (i=m; i<=n; i++){
+        soma= soma+1;
+    }
+    printf("entre %d e %d existem %d numeros", m,n,soma);
+    scanf("%d" "%d", &m, &n);
+}
+return 0;
+}
+
+exercicio 24
+
+#include <stdio.h>
+int main(){
+int op, sal, imp, aum, novo_sal;
+do{
+printf("escolha uma das opcoes desejada:\n\n1 - Imposto \n2 - Novo salario \n3 - Classificacao \n4 - Finalizar o programa\n");
+printf("\nDigite a opcao desejada:\n");
+scanf("%d", &op);
+if (op>4 || op<1){
+    printf("Opcao invalida!");
+}
+if (op==1){
+    printf("valor do salario:");
+    scanf("%d", &sal);
+    if (sal<500){
+        imp=sal*5/100;}
+
+    if (sal>=500 && sal <=850){
+        imp=sal*10/100;}
+
+    if (sal>850){
+        imp=sal*15/100;}
+
+printf("imposto e: %d", imp);
+}
+if (op==2){
+    printf("valor do salario:");
+    scanf("%d", &sal);
+    if (sal>500){
+        aum=25;}
+
+    if (sal>=750 && sal <=1500){
+        aum=50;}
+
+    if (sal>=450 && sal <750){
+        aum=75;}
+
+    if (sal<450){
+        aum=100;
+        novo_sal=sal+aum;}
+
+
+printf("o aumento do salario e: %d", novo_sal);
+}
+if (op==3){
+    scanf("salario:",sal);
+    if (sal<=700){
+        printf("mal remunerado");
+    }
+    else{
+        printf("bem remunerado");
+    }
+}
+}while(op==4);
+return 0;
+}

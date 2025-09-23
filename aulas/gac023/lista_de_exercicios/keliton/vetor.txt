@@ -1,0 +1,79 @@
+
+
+/*exercicio 03 Cap vetor-Faça um programa que preencha dois vetores de dez elementos numéricos cada um e mostre o vetor resultante
+da intercalação deles.*/
+
+#include <stdio.h>
+
+int main()
+{
+    int i, j, vet1[10], vet2[10], vet3[20]; // declarei as variaves do dois vetores e a do vetor resultante
+    
+    j=0; // igualei a zero para evitar que haja algo na lixeira.
+
+    for(i=0; i<10; i++) // este for serve para o preenchimento dos vetores 1 e 2 com 10 elementos cada.
+    {
+        printf("\nDigite um numero do vetor 1:");
+        scanf("%d",&vet1[i]);//lendo o elemento inserido no vetor 1.
+
+        vet3[j]=vet1[i]; // o vet3 ira receber o elemento inserido do vet1.
+
+        j= j+1; // aqui serve para que o proximo elemento inserido, seja armazenado na posição seguinte que no caso sera a do vetor 2.
+
+        printf("\nDigite um numero do vetor 2:");
+        scanf("%d",&vet2[i]);//lendo o elemento inserido no vetor 2.
+
+        vet3[j]=vet2[i];//o vet3 ira receber o elemento inserido do vet2.
+
+        j= j+1;// aqui serve para que o proximo elemento inserido, seja armazenado na posição seguinte que no caso sera a do vetor 1.
+    }
+     for(i=0; i<20; i++)//Este for é para mostrar os elementos dos vetor 3, aonde rsulta a intercalação.
+     {
+         printf("\n %d",vet3[i]);
+     }
+     return 0;
+}
+
+
+
+
+==========================================================================================================================
+
+/*exercicio 06 Cap vetor-Faça um programa que preencha um vetor com dez números inteiros, calcule e mostre o vetor resultante
+de uma ordenação decrescente.*/
+
+#include <stdio.h>
+
+int main()
+{
+    int i, j, vet[10], aux=0;// declarei as variaveis para a esrutura de repetição, o vetor, e uma variavel auxiliar;
+
+    for(i=0; i<10; i++)// for com 10 posiçoes para serem preenchidas;
+    {
+        printf("\nDigite um Numero: ");
+        scanf("%d",&vet[i]);//ler e armazernar o numeros inseridos.
+
+    }
+    for(i=0; i<10; i++)//este for serve para analisar cada numero inserido.
+    {
+        for(j=0; j<9; j++)//um for dentro de outro for, com isso é possivel analisar uma posiçao do primeiro for com todas do vetor.
+        {
+            if(vet[j]<vet[j+1]){// uma condiçao caso esse numero analisado seja menor que o da posiçao seguinte, caso nao for passa para posiçao seguinte.
+                
+		aux=vet[j];// sendo menor o numero ira passa a variavel auxiliar deixando a posiçao vazia.
+                
+		vet[j]=vet[j+1];// e o que estava na posiçao sequite passa para essa posiçao vazia.
+               
+	 	vet[j+1]=aux;// e o numero que estava na variavel auxiliar para para a posiçao seguinte, dessa maneira conseguimos colocar na ordem decrescente
+            }
+
+
+
+        }
+    }
+    for(i=0; i<10; i++) // este for é para mostrar o resultado. 
+    {
+        printf("\n%d",vet[i]);
+    }
+    return 0;
+}

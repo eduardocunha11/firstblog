@@ -1,0 +1,81 @@
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Vetor
+// Exercicio 4 dos propostos
+// 09/09/2018
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int vet [15], i, cont;
+
+
+for(i=1; i<=15; i++) // para o vetor com 15 posicoes faca i variando de 1 a 15
+{
+    printf("Digite um valor:", i+1); // ao digitar o valor armazene na posicao i+1 do vet i
+    scanf("%d", &vet[i]);
+
+    if(vet[i==30]) // se o vetor i conter o valor igual a 30, conte quantas vezes ele aparece
+    {
+        cont= cont + 1;
+    }
+}
+printf("O valor 30 aparece nas posicoes ", cont); // mostre as posicoes que aparece o valor 30
+
+for(i=1; i<=15; i++)
+{
+    if(vet[i] == 30)
+    {
+        printf("%d \t", i); //se alguma posicao valer 30 imprima
+    }
+}
+printf("do vetor");
+
+    return 0;
+}
+
+
+
+
+// Leonidas Rodrigues Mendonca
+// 31511ECA002
+// Vetor
+// Exercicio 6 dos resolvidos
+// 09/09/2018
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int vet[10], i, j, aux;
+
+// Enquanto i for igual a 1 e menor ou igual a 10, peca ao usuario para digitar valores e armazenar no vetor i.
+
+for (i=0; i<10; i++)
+{
+    printf("Digite um valor:");
+    scanf("%d", &vet[i]);
+}
+
+// Para i obedecendo essa condição faca um segundo vetor que irá armazenar a ordem correta do numeros e que esteja dentro da condicao do vetor i
+for (i=0; i<10; i++)
+{
+    for(j=0; j<=10;j++)
+    {
+        if (vet[j] < vet[j+1]) // se o valor na posicao j for menor que j+1
+        {
+            aux=vet[j]; //adicione o valor na variavel aux
+            vet[j]=vet[j+1]; // adicione o valor a frente no vet j
+            vet[j+1]=aux; // o valor na posicao da frente sera armazenado sobre a variavel aux
+        }
+    }
+}
+// Feito o vetor j com as posições corretas print o vetor i com os numeros digitados na ordem crescente
+for (i=0; i<10; i++)
+{
+    printf(" %d \t", vet[i]);
+}
+
+  return 0;
+}

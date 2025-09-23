@@ -1,0 +1,153 @@
+EXERCICIOS DE ESTRUTURA DE CONDICIONAL
+
+EXERCICIO 07 CAP 04
+
+#include <stdio.h>
+
+int main()
+{
+ int I;
+ float A, B, C;
+
+ printf("Digite um valor para A\n");
+ scanf("%f",&A);
+ printf("Digite um valor para B\n");
+ scanf("%f",&B);
+ printf("Digite um valor para C\n");
+ scanf("%f",&C);
+ printf("Digite um valor para I(1,2 ou 3)\n");
+ scanf("%d",&I);
+     switch(I){
+ case 1:
+    {
+        if((A<B)&&(A<C)){
+            if(B<C)
+                printf("Valores na Ordem Crescente:%f - %f - %f  ",A, B, C);
+            else
+               printf("Valores na Ordem Crescente:%f - %f - %f  ",A, C, B);
+            }
+
+        if((B<A)&&(B<C)){
+            if(A<C)
+                printf("Valores na Ordem Crescente:%f - %f - %f  ",B, A, C);
+            else
+               printf("Valores na Ordem Crescente:%f - %f - %f  ",B , C, A);
+            }
+
+        if((C<A)&&(C<B)){
+            if(A<B)
+                printf("Valores na Ordem Crescente:%f - %f - %f  ",C, A, B);
+            else
+               printf("Valores na Ordem Crescente:%f - %f - %f  ",C, B, A);
+            }
+         }break;
+
+ case 2:
+    {
+        if((A>B)&&(A>C)){
+            if(B>C)
+                printf("Valores na Ordem Decrescente:%f - %f - %f  ",A, B, C);
+            else
+               printf("Valores na Ordem Decrescente:%f - %f - %f  ",A, C, B);
+            }
+
+            if((B>A)&&(B>C)){
+            if(A>C)
+                printf("Valores na Ordem Decrescente:%f - %f - %f  ",B, A, C);
+            else
+               printf("Valores na Ordem Decrescente:%f - %f - %f  ",B , C, A);
+            }
+
+        if((C>A)&&(C>B)){
+            if(A>B)
+                printf("Valores na Ordem Decrescente:%f - %f - %f  ",C, A, B);
+            else
+               printf("Valores na Ordem Decrescente:%f - %f - %f  ",C, B, A);
+            }
+        }break;
+
+ case 3:
+    {
+       if((A>B)&&(A>C))
+            printf("Valor Maior entre os Outros:%f - %f - %f  ",B ,A, C);
+
+       if((B>A)&&(B>C))
+
+                printf("Valor Maior entre os Outros:%f - %f - %f  ",A, B, C);
+
+        if((C>A)&&(C>B))
+
+                printf("Valor Maior entre os Outros:%f - %f - %f  ",A, C, B);
+    }break;
+   }
+   return 0;
+}
+
+
+
+
+======================================================================================================================================
+EXERCICIO 12 CAP 04
+
+
+#include <stdio.h>
+
+int main()
+{
+  int cod;
+  float sal, aumento, salnovo;
+
+  printf("---CARGOS:----\n");
+  printf("1 - Escrituario\n");
+  printf("2 - Secretario\n");
+  printf("3 - Caixa\n");
+  printf("4 - Gerente\n");
+  printf("5 - Diretor\n");
+
+  printf("\nDigite o Codigo correspondente ao cargo:\n");
+  scanf("%d",&cod);
+
+  printf("\nDigite o valor do Salario Atual :\n");
+  scanf("%f",&sal);
+
+  if(cod==1){
+        printf("\n O cargo e de Escrituario");
+        aumento = sal*0.50;
+        printf("\n O valor do aumento e:%f",aumento);
+        salnovo=sal+aumento;
+        printf("\n O novo salario e:%f",salnovo);
+       }
+  else if(cod==2){
+        printf("\n Cargo de Secretario");
+        aumento = sal*0.35;
+        printf("\n O valor do aumento e:%f",aumento);
+        salnovo=sal+aumento;
+        printf("\n O novo salario e:%f",salnovo);
+       }
+  else if(cod==3){
+        printf("\n Cargo de Caixa");
+        aumento = sal*0.20;
+        printf("\n O valor do aumento e:%f",aumento);
+        salnovo=sal+aumento;
+        printf("\n O novo salario e:%f",salnovo);
+       }
+  else if(cod==4){
+        printf("\n Cargo de Gerente");
+        aumento = sal*0.10;
+        printf("\n O valor do aumento e:%f",aumento);
+        salnovo=sal+aumento;
+        printf("\n O novo salario e:%f",salnovo);
+       }
+  else if(cod==5){
+        printf("\n Cargo de Diretor");
+        printf("Nao tem Aumento");
+       }
+   else
+        printf("Codigo invalido");
+
+return 0;
+}
+
+
+
+

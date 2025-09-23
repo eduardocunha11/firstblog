@@ -1,0 +1,107 @@
+//Fernanda Luíza Ribeiro Magalhães - 31321ECA016
+//Capitulo 4 - Estrutura condicional
+//Exercicio 7
+#include<stdio.h>
+#include<stdlib.h>
+
+int main() {
+
+   int i;
+   float a, b, c, or;
+
+    printf("Digite um valor para A: ");
+    scanf("%f", &a);
+    printf("Digite um valor para B: ");
+    scanf("%f", &b);
+    printf("Digite um valor para C: ");
+    scanf("%f", &c);
+    printf("Digite um valor para I (1, 2 ou 3): ");
+    scanf("%d", &i);
+
+    while ((a > b)||(b > c)) {
+
+        if (a > b) {
+            or = a;
+            a = b;
+            b = or;
+        }
+        if (b > c) {
+            or = b;
+            b = c;
+            c = or;
+        }
+   }
+
+    switch (i) {
+
+        case 1:
+            printf("1 - Ordem crescente: %f\t%f\t%f\n", a, b, c);
+            break;
+        case 2:
+            printf("2 - Ordem decrescente: %f\t%f\t%f\n", c, b, a);
+            break;
+        default:
+            printf("3 - Maior no meio: %f\t%f\t%f\n", a, c, b);
+   }
+
+   return 0;
+}
+
+
+//Fernanda Luíza Ribeiro Magalhães - 31321ECA016
+//Capitulo 4 - Estrutura condicional
+//Exercicio 12
+#include<stdio.h>
+#include<stdlib.h>
+
+int main() {
+
+   	int cargo = 0;
+	float salario = 0;
+
+	printf("Digite o cargo do funcionario:\n");
+	printf("1- Escriturario\n2- Secretario\n3- Caixa\n4- Gerente\n5- Diretor\n");
+	scanf("%i", &cargo);
+	printf("Digite o salario atual: ");
+    scanf("%f", &salario);
+
+	switch (cargo) {
+
+        case 1:{
+            printf("O cargo eh Escriturario\n");
+            printf("O valor do aumento: R$%.2f\n", (salario * 1.5) - salario);
+            printf("Novo salario: R$%.2f\n", salario * 1.5);
+            break;
+        }
+
+        case 2:{
+            printf("O cargo eh Secretario\n");
+            printf("O valor do aumento: R$%.2f\n", (salario * 1.35) - salario);
+            printf("Novo salario: R$%.2f\n", salario * 1.35);
+            break;
+        }
+
+        case 3:{
+            printf("O cargo eh Caixa\n");
+            printf("O valor do aumento: R$%.2f\n", (salario * 1.2) - salario);
+            printf("Novo salario: R$%.2f\n", salario * 1.2);
+            break;
+        }
+
+        case 4:{
+            printf("O cargo eh Gerente\n");
+            printf("O valor do aumento: R$%.2f\n", (salario * 1.1) - salario);
+            printf("Novo salario: R$%.2f\n", salario * 1.1);
+            break;
+        }
+
+         case 5:{
+            printf("O cargo eh Diretor\n");
+            printf("O valor do aumento: R$%.2f\n", (salario * 1.0) - salario);
+            printf("Novo salario: R$%.2f\n", salario * 1.0);
+            break;
+        }
+	}
+
+   return 0;
+}

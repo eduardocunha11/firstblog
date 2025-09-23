@@ -1,0 +1,154 @@
+Programação Aplicada para Engenharia- turma 2018-2
+Engenharia de Agrimensura e Cartográfica
+Victória Guerrero- 31311ECA020
+Exercicíos Avaliativos- Estrutura Condicional-Cap.4
+
+7) Faça um programa que receba quatro valores:I,A,B e C. Desses valores, I é inteiro e positivo, A,B e C são reais. Escreva os números A,B e C obedecendo a tabela a seguir. Suponha que o valor digitado para I seja sempre um valor, ou seja, 1,2 ou 3, e que os números digitados sejam diferentes um do outro. 
+
+Valores de I	     Forma a Escrever
+    1	        A,B e C em ordem crescente
+    2	        A,B e C em ordem decrescente
+    3	        O maior fica entre os outros dois numeros
+
+Resolução:
+
+#include <stdio.h>
+main()
+{
+    int i;
+    float a,b,c;
+    printf ("\n Menu de opções:");
+    printf("\n 1_a,b,c em ordem crescente:");
+    printf("\n 2_a,b,c em ordem descrescente:");
+    printf("\n 3 o maior fica entre os outros dois:");
+    printf("\n Digite o valor de a:");
+    scanf("%f", &a);
+    printf("\n Digite o valor de b:");
+    scanf("%f", &b);
+    printf("\n Digite o valor de c:");
+    scanf("%f", &c);
+    printf("\n Digite a opção desejada:");
+    scanf("%d", &i);
+    if (i==1)
+    {
+        if ((a>b) && (a>c))
+        if (b>c)
+            printf("\n a>b>c");
+        else
+            printf("\n a>c>b");
+        if  ((b>a) && (b>c))
+        if  ((a>c) && (b>c))
+        printf("\n b>a>c");
+        else
+            printf("\n b>c>a");
+        if ((c>a) && (c>b))
+        if (a>b)
+        printf("\n c>a>b");
+        else
+        printf("\n c>b>a");
+    }
+    else if (i==2)
+    {
+         if ((a<b) && (a<c))
+        if (b<c)
+            printf("\n a<b<c");
+        else
+            printf("\n a<c<b");
+        if ((b<a) && (b<c))
+        if ((a<c) && (b<c))
+        printf("\n b<a<c");
+        else
+            printf("\n b<c<a");
+        if ((c<a) && (c<b))
+        if (a<b)
+        printf("\n c<a<b");
+        else
+        printf("\n c<b<a");
+    }
+    else
+    {
+        if ((a>b) && (a>c))
+        printf("\n b<a>c");
+        else if ((b>a) && (b>c))
+        printf("\n a<b>c");
+        else
+        printf("\n a<c>b");
+    }
+}
+
+
+
+
+12) Faça um programa que receba o código correspondente ao cargo de um funcionário e seu salário atual e mostre o cargo, o valor do aumento e seu novo salário. Os cargos estão na tabela a seguir. 
+
+
+Código	  Cargo	           Percentual
+1	 Escriturário	       50%
+2	 Secretário	       35%
+3	  Caixa	               20%
+4	 Gerente	       10%
+5	 Diretor	   Não tem aumento 
+
+Resolução:
+
+#include <stdio.h>
+main()
+{
+    int codigo;
+    float sal_atual, aumento, novo_sal;
+    printf("\n Digite o codigo:");
+    scanf("%d", &codigo);
+    printf("\n Digita o salario atual:");
+    scanf("%f", &sal_atual);
+    if ((codigo==1))
+    {
+    aumento=((sal_atual*0,5));
+    novo_sal=((sal_atual+aumento));
+    printf("\n Escrituário:");
+    printf("\n O aumento é:");
+    printf("\n Aumento:");
+    printf("\n O novo salario é:");
+    printf("\n Novo salário:");
+    }
+    else if ((codigo==2))
+    {
+    aumento=((sal_atual*0,35));
+    novo_sal=((sal_atual+aumento));
+    printf("\n Secretário:");
+    printf("\n O aumento é:");
+    printf("\n Aumento:");
+    printf("\n O novo salario é:");
+    printf("\n Novo salário:");
+    }
+     else if ((codigo==3))
+    {
+    aumento=((sal_atual*0,2));
+    novo_sal=((sal_atual+aumento));
+    printf("\n Caixa:");
+    printf("\n O aumento é:");
+    printf("\n Aumento:");
+    printf("\n O novo salario é:");
+    printf("\n Novo salário:");
+    }
+     else if ((codigo==4))
+    {
+    aumento=((sal_atual*0,1));
+    novo_sal=((sal_atual+aumento));
+    printf("\n Gerente:");
+    printf("\n O aumento é:");
+    printf("\n Aumento:");
+    printf("\n O novo salario é:");
+    printf("\n Novo salário:");
+    }
+    else
+    {
+    printf("\n Diretor:");
+    printf("\n Salario Atual:");
+    printf("\n Não tem aumento:");
+    }
+}
+
+
+
+
+

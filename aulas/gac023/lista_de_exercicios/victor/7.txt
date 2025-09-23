@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+// Nome: Victor Hugo da Silva Lemos * Matricula: 31321ECA022 * Data:27/08/2018
+int main()
+{
+    int i;
+    float a, b, c;
+    printf("valor para A:");
+    scanf("%f",&a);
+    printf("valor para B:");
+    scanf("%f",&b);
+    printf("valor para C:");
+    scanf("%f", &c);
+    printf("valor para I:");
+    scanf("%d", &i);
+    if (i==1) {
+        if (a<b && a<c){
+            if (b<c){
+                printf("a ordem crescente dos numeros e %f %f %f", a, b, c );}
+            else{
+                printf(" a ordem A ordem crescente dos números e %f %f %f ", a, c, b);}
+        }
+        if (b<a && b<c){
+            if (a<c){
+                printf("A ordem crescente dos números %f %f %f ", b, a, c);}
+            else{
+                ("A ordem crescente dos números é: %f %f %f", b, c, a);}
+        }
+        if (c<a && c<b){
+            if (a<b){
+                printf("A ordem crescente dos números é: %f %f %f", c, a, b);}
+            else{
+                printf("A ordem crescente dos números é: %f %f %f", c, b, a);}
+        }
+    }
+
+    if (i==2){
+        if (a>b && a>c){
+            if (b>c){
+                printf("A ordem decrescente dos números é: %f %f %f",  a, b, c);}
+             else{
+                printf("A ordem decrescente dos números é: %f %f %f", a, c, b);}
+        }
+        if(b>a && b>c){
+            if (a>c){
+                printf("A ordem decrescente dos números é: %f %f %f", b, a, c);}
+            else{
+                printf("A ordem decrescente dos números é: %f %f %f", b, c, a);}
+        }
+        if(c>a && c>b){
+            if (a>b){
+                printf("A ordem decrescente dos números é: %f %f %f", c, a, b);}
+            else{
+                printf("A ordem decrescente dos números é: %f %f %f", c, b, a);}
+        }
+    }
+    if (i==3){
+
+        if (a>b && a>c){
+            printf("A ordem desejada é:", b, a, c);
+        }
+        if (b>a && b>c){
+            printf("A ordem desejada é:", a, b, c);
+        }
+        if (c>a && c>b){
+            printf("A ordem desejada é:", a, c, b);
+        }
+
+    return 0;
+}
+}

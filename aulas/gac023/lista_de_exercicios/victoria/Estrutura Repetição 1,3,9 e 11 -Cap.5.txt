@@ -1,0 +1,140 @@
+Programação Aplicada para Engenharia- turma 2018-2
+Engenharia de Agrimensura e Cartográfica
+Victória Guerrero- 31311ECA020
+Exercicíos Avaliativos- Estrutura Repetição-Cap.5
+
+1) Um funcionário de uma empresa recebe, anualmente aumento salarial. Sabe-se que:
+a- Esse funcionário foi contratado em 2005, com salário inicial de R$1.000,00.
+b- Em 2006, ele recebeu aumento de 1,5% sobre seu salário inicial.
+c- A partir de 2007 (inclusive), os aumentos saláriais sempre correspondem ao dobro do percentual do ano anterior.
+Faça um programa que determine o salário atual desse funcionário. 
+
+#include<stdio.h>
+main()
+{
+    float i, ano_atual,salario;
+    float novo_salario, percentual;
+    printf("\n digite o ano:");
+    scanf("%f", &ano_atual);
+    salario=1000;
+    percentual=1.5/100;
+    novo_salario=(salario+percentual*salario);
+    for (i=0; i<2007; i++)
+    {
+        percentual=(2*percentual);
+        novo_salario=(novo_salario+percentual*novo_salario);
+    }
+    printf("\n Digite o novo salario:");
+    scanf("%f", &novo_salario);
+}
+
+
+3)faça um programa que leia um número N que indica quantos valores inteiros e positivos devem ser lidos a seguir. Para cada número lido, mostre uma tabela contendo o valor lido e o fatorial desse valor. 
+
+#include <stdio.h>
+main()
+{
+    int n, num, i, j, fat;
+    printf("\n Digite um numero N:");
+    scanf ("%d", &n);
+    for (i=0; i<n; i++)
+    {
+        printf ("\n digite um numero:");
+        scanf("%d", &num);
+        fat=1;
+        j=1 & num;
+        {
+            fat=(fat*j);
+        }
+        printf("\n fat:");
+    }
+}
+
+
+9)Faça um programa que receba duas notas de seis alunos. Calcule e mostre:
+- a média aritmética das duas notas de cada aluno; e
+- a mensagem que está na tabela a seguir:
+
+	Média Aritmética    Mensagem
+	    Até 3            Reprovado
+	  Entre 3 e 7        Exame
+          De 7 para cima     Aprovado
+
+- o total de alunos aprovados;
+- o total de alunos de exame;
+- o total de alunos reprovados;
+- a média da classe. 
+
+#include <stdio.h>
+#include<stdlib.h>
+main ()
+{
+    float media,soma, soma_total=0;
+    int i, n1, n2, ta=0, te=0, tr=0;
+    int media_classe, total_classe=0;
+
+    for (i=0; i<6; i++)
+    {
+        printf ("Aluno %d", i+1);
+        {
+            printf("\n Digite a nota 1:");
+            scanf("%d", &n1);
+            printf("\n Digite a nota 2:");
+            scanf("%d", &n2);
+            media = (n1+n2)/2;
+            printf ("Media = %f", media);
+            soma = n1 + n2;
+            soma_total = soma_total + soma;
+        }
+        if (media<=3)
+        {
+            tr=tr+1;
+            printf("\n reprovado!");
+        }
+        if (media>3 && media<7)
+        {
+            te=te+1;
+            printf("\n exame!");
+        }
+        if (media>=7)
+        {
+            ta=ta+1;
+            printf("\n aprovado!");
+        }
+        printf("\n tr: %d", tr);
+        printf("\n te: %d", te);
+        printf("\n ta: %d", ta);
+
+    }
+    media_classe=(soma_total/6);
+    printf("\n media_classe: %f\n\n", media_classe);
+}
+
+
+11) Faça um programa que receba um número inteiro maior que 1, verifique se o número fornecido é primo ou não e mostre uma mensagem de número primo ou de número não primo. Um número é primo quando é divisivel apenas por 1 e por ele mesmo. 
+
+#include <stdio.h>
+main ()
+{
+    float i=0, num, quant=0;
+    printf ("\n Digite um numero:");
+    scanf ("%f", &num);
+    for (i=0; i<num; i++)
+    {
+
+        if resto(num/i)==0
+        quant=quant+1;
+
+        if (quantidade>2)
+            printf ("\n Numero não é primo:");
+        else
+            printf("\n Numero é primo:");
+    }
+
+}
+
+
+Obs: Estou com bastante dificuldade nos exercícios como você pode ver, mas estou procurando ajuda para estar melhorando.  
+
+
+

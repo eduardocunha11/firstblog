@@ -1,0 +1,235 @@
+Engenharia de Agrimensura e Cartográfica
+Victor Hugo da Silva Lemos
+31321ECA022
+
+
+
+Questão 01:
+
+#include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+
+int main(){
+    int i, palavras;
+    char frase[30];
+    printf ("\n Entre com um String;\n");
+    gets(frase);
+    palavras=0;
+    for(i=0; i<30; i++) {
+        if(frase[i] == 32)
+            palavras++;
+            printf("\n ", frase);
+    }
+}
+
+Questão 02:
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+
+   char str[200];
+   int i, tam=0;
+
+   printf("\nEntre com a String:\n");
+   gets(str);
+   for(i=0;str[i]!='\0'; i++){
+
+    tam ++;
+   }
+   printf("\nA String tem %d letras:\n", tam);
+
+    return 0;
+  }
+Questão 03:
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<string.h>
+
+int main(){
+    char nome[30];
+
+    printf("\n Entre com um nome: ");
+    gets(nome);
+    if(nome[0]=='A'||nome[0]=='a')
+        printf("\n%s",nome);
+        printf("\n\n");
+
+ return(0);
+}
+
+Questão 04:
+
+#include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+
+int main(){
+  int i;
+  char nome[4];
+
+  printf("Entre com um nome: ");
+  gets(nome);
+  for (i = 0; i < nome[i]; i++) {
+
+    if (i < 4) {
+      printf("Letra %d: \%c\n", i+1, nome[i]);
+    }
+  }
+  printf("\n\n");
+return 0 ;
+}
+
+Questão 05:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+main(){
+    int x,tam;
+    char nome[30];
+    for (x=1; x <= 4; x++)
+{
+        printf("Digite um nome : ");
+        gets(nome);
+
+        tam = strlen(nome);
+        printf("\n Esse nome tem %d\ letras.\n\n",tam);
+}
+        printf("\n\n");
+
+return 0;
+}
+
+Questão 06:
+
+#include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+
+int main (){
+    char nome[30], sexo;
+    int idade;
+
+    printf("Entre com o nome: ");
+    gets(nome);
+    printf(" Digite o sexo: ");
+    scanf("%c",&sexo);
+    printf("Qual sua idade? ");
+    scanf("%d", &idade);
+
+   if(sexo="f"){
+               if(idade<=25){
+                             printf("ACEITA!");
+
+                             }else{
+                                   printf("NAO ACEITA!");
+                                   }
+               }else{
+                     printf("NAO ACEITA!");
+                     }
+
+
+   return 0;
+}
+
+Questão 07:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+    char str1[10] = "Jogador";
+    char str2[10] = "Time";
+    int i = 0;
+
+    for(i=0; str1[i] == str2[i]; i++){
+        printf("jogador e time corretos !\n");
+
+    }
+    for(i=0; str1[i] != str2[i]; i++){
+        printf("jogador ou time invalidos\n");
+        break;
+    }
+    return 0;
+}
+
+Questão 08:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+    char str[10] = "0121321517";
+    int i = 0;
+    int cont = 0;
+
+    for(i=0; str[i] != '\0'; i++){
+        if(str[i] == '1'){
+        cont += 1;
+        }
+    }
+    printf("%d", cont);
+
+return 0;
+}
+
+Questão 09:
+
+#include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+
+main(){
+    char string[100];
+    char ch1;
+    char ch2;
+    int x, tam;
+
+    printf ("Entre com uma frase:\n");
+    gets(string);
+    printf ("Entre com alguma letra q exista na frase acima:\n");
+    scanf ("%c", &ch1);
+    printf ("Entre com alguma letra q exista ou nao na frase acima:\n");
+    scanf (" %c", &ch2);
+    tam=strlen(string);
+    for (x=0;x<tam;x++){
+        if (string[x]==ch1){
+            string[x]=ch2;
+        }
+    }
+    printf ("%s", string);
+    return 0;
+}
+
+Questão 10:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+main(){
+
+    int x,y,tam;
+    char nome[30];
+
+    printf("Digite uma palavra: ");
+    gets(nome);
+    tam = strlen(nome);
+    printf("\n A palavra de tras pra frente e: ");
+    for (x=tam-1; x >= 0; x--)
+        printf("%c",nome[x]);
+        printf("\n\n");
+
+return 0;
+}

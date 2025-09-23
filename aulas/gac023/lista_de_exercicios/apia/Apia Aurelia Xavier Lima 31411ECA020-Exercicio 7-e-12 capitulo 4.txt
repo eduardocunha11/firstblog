@@ -1,0 +1,51 @@
+    Exercicio 7
+
+#include <stdio.h>
+int main(){
+    float sala,NovoSalario;
+
+    printf("Digite o salario: ");
+    scanf("%f", &sala);
+
+    if (sala<=500){
+        NovoSalario=sala*1.30;
+        printf("o salario novo e %f\n",  NovoSalario);
+    }else {
+        printf("Nao tem aumento.\n");
+    }
+
+    return 0;
+}
+
+
+
+        Exercicio-12
+
+
+#include <stdio.h>
+
+int main(){
+    float Sala,NovoSala;
+
+    printf("Digite o Sala :\n");
+    scanf("%f", &Sala);
+
+    if(Sala<=350.00){
+        NovoSala=(Sala+100.00)-((Sala*1.07)-Sala);
+        printf("O Salario Novo, contando Imposto e Gratificacao: %f\n",NovoSala);
+    }
+    if(Sala>350.00&&Sala<=600.00){
+       NovoSala=(Sala+75.00)-((Sala*1.07)-Sala);
+        printf("O Salario Novo, contando Imposto e Gratificacao: %f\n",NovoSala);
+    }
+    if(Sala>600.00&&Sala<=900.00){
+        NovoSala=(Sala+50.00)-((Sala*1.07)-Sala);
+        printf("O Salario Novo, contando Imposto e Gratificacao: %f\n",NovoSala);
+    }
+    if(Sala>900.00){
+        NovoSala=(Sala+35.00)-((Sala*1.07)-Sala);
+        printf("O Salario Novo, contando Imposto e Gratificacao: %f\n",NovoSala);
+    }
+
+    return 0;
+}

@@ -1,0 +1,116 @@
+CAPÍTULO 4 - ESTRUTURA CONDICIONAL
+
+Nome: Monara Nogueira Silva
+Matrícula: 31521ECA001
+Data: 27/08/2018
+
+
+Exercício 7
+
+#include <stdio.h>
+int main () {
+int I;
+float A, B, C;
+printf("Digite um valor para A:\n");
+scanf("%f", & A);
+printf("Digite um valor para B:\n");
+scanf("%f", & B);
+printf("Digite um valor para C:\n");
+scanf("%f", & C);
+printf("Digite um valor para I (1, 2 ou 3):\n");
+scanf("%i", & I);
+if (I==1) {
+    if (A<B && A<C)
+        if (B<C)
+        printf("A ordem crescente dos numeros é: %f, %f, %f", A,B,C);
+        else
+        printf("A ordem crescente dos numeros é: %f, %f, %f", A,C,B);
+    if (B<A && B<C)
+        if (A<C)
+        printf("A ordem crescente dos numeros é: %f, %f, %f", B,A,C);
+        else
+        printf("A ordem crescente dos numeros é: %f, %f, %f", B,C,A);
+    if (C<A && C<B)
+        if (A<B)
+        printf("A ordem crescente dos numeros é: %f, %f, %f", C,A,B);
+        else
+        printf("A ordem crescente dos numeros é: %f, %f, %f", C,B,A);
+}
+if (I==2) {
+    if (A>B && A>C)
+        if (B>C)
+        printf("A ordem decrescente dos numeros é: %f, %f, %f", A,B,C);
+        else
+        printf("A ordem decrescente dos numeros é: %f, %f, %f", A,C,B);
+    if (B>A && B>C)
+        if (A>C)
+        printf("A ordem decrescente dos numeros é: %f, %f, %f", B,A,C);
+        else
+        printf("A ordem decrescente dos numeros é: %f, %f, %f", B,C,A);
+    if (C>A && C>B)
+        if (A>B)
+        printf("A ordem decrescente dos numeros é: %f, %f, %f", C,A,B);
+        else
+        printf("A ordem decrescente dos numeros é: %f, %f, %f", C,B,A);
+}
+if (I==3){
+    if (A>B && A>C)
+        printf("A ordem desejada é: %f, %f, %f", B,A,C);
+    if (B>A && B>C)
+        printf("A ordem desejada é: %f, %f, %f", A,B,C);
+    if (C>A && C>B)
+        printf("A ordem desejada é: %f, %f, %f", A,C,B);
+}
+return 0;
+}
+
+
+Exercício 12
+
+#include <stdio.h>
+int main () {
+int cargo;
+float salario, aumento, novo_sal;
+printf("Digite o cargo do funcionario (1, 2, 3, 4 ou 5)\n");
+scanf("%i", & cargo);
+printf("Digite o valor do sálario:\n");
+scanf("%f", & salario);
+switch(cargo) {
+    case 1: printf("O cargo é: Escritório");
+    aumento= salario * 50/100;
+    printf("O valor do aumento é:%f\n", aumento);
+    novo_sal = salario + aumento;
+    printf("O novo salario é:%f\n", novo_sal);
+    break;
+
+    case 2: printf("O cargo é: Secretário");
+    aumento= salario * 35/100;
+    printf("O valor do aumento é:%f\n", aumento);
+    novo_sal = salario + aumento;
+    printf("O novo salario é:%f\n", novo_sal);
+    break;
+
+    case 3: printf("O cargo é: Caixa");
+    aumento= salario * 20/100;
+    printf("O valor do aumento é:%f\n", aumento);
+    novo_sal = salario + aumento;
+    printf("O novo salario é:%f\n", novo_sal);
+    break;
+
+    case 4: printf("O cargo é: Gerente");
+    aumento= salario * 10/100;
+    printf("O valor do aumento é:%f\n", aumento);
+    novo_sal = salario + aumento;
+    printf("O novo salario é:%f\n", novo_sal);
+    break;
+
+    case 5: printf("O cargo é: Diretor");
+    aumento= salario * 0/100;
+    printf("O valor do aumento é:%f\n", aumento);
+    novo_sal = salario + aumento;
+    printf("O novo salario é:%f\n", novo_sal);
+    break;
+default: printf("Código de funcionário inexistente.\n");
+}
+return 0;
+}

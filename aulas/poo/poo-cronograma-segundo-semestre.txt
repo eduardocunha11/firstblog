@@ -1,0 +1,103 @@
+Disciplina de PC2
+
+Slides da Kecia por serem mais simples e diretos.
+
+Playlist: https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY
+
+Videoaulas do Gustavo Guanabara
+
+Aula 1 - O que é um Objeto?
+
+https://www.youtube.com/watch?v=aR7CKNFECx0&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=3
+
+Aula 2 - Criando Classes e Objetos em Java
+
+https://www.youtube.com/watch?v=wNaoX6VOj54&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=4
+
+Aula 3 - O que é Visibilidade em um Objeto?
+
+https://www.youtube.com/watch?v=jFI-qqitzwk&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=6
+
+Aula 4 - Configurando Visibilidade de Atributos e Métodos
+
+https://www.youtube.com/watch?v=LV2243j4RTQ&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=7
+
+Aula 5 - Métodos Especiais
+
+https://www.youtube.com/watch?v=g2x9oyBFSco&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=8
+
+Aula 6 - Métodos Getter, Setter e Construtor
+
+https://www.youtube.com/watch?v=6i-_R5cAcEc&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=9
+
+Aula 7 - Exemplo Prático com Objetos
+
+https://www.youtube.com/watch?v=ull_DVFFOq0&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=11&t=0s
+
+Aula 8 - Exemplo Prático em Java
+
+https://www.youtube.com/watch?v=hOC461osYgk&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=11
+
+Aula 9 - Pilares da POO: Encapsulamento
+
+https://www.youtube.com/watch?v=1wYRGFXpVlg&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=12
+
+Aula 10 - Encapsulamento
+
+https://www.youtube.com/watch?v=x4JfzV0Wb5w&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=13
+
+Aula 11 - Relacionamento entre Classes
+
+https://www.youtube.com/watch?v=GLHbxDU9iBA&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=14
+
+Aula 12 - Objetos Compostos em Java
+
+https://www.youtube.com/watch?v=BfrbCQ3XcrA&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=15
+
+Aula 13 - Relacionamento de Agregação
+
+https://www.youtube.com/watch?v=ERdvijGtrq0&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=16
+
+Aula 14 - Agregação entre Objetos com Java
+
+https://www.youtube.com/watch?v=8R9RpqpXI_c&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=17
+
+Aula 15 - Exercícios de POO
+
+https://www.youtube.com/watch?v=TaqBuubOBgI&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=18
+
+Aula 16 - Exercício prático POO em Java
+
+https://www.youtube.com/watch?v=xgqrkCcH6Ko&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=19
+
+Aula 17 - Herança (Parte 1)
+
+https://www.youtube.com/watch?v=_PZldwo0vVo&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=20
+
+Aula 18 - Herança (Parte 2)
+
+https://www.youtube.com/watch?v=He887D2WGVw&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=22
+
+Aula 19 - Conceito Polimorfismo (Parte 1)
+
+https://www.youtube.com/watch?v=9-3-RMEMcq4&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=24
+
+Aula 20 - Polimorfismo em Java (Parte 1)
+
+https://www.youtube.com/watch?v=NctjqlfKC0U&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=25
+
+Aula 21 - Conceito Polimorfismo (Parte 2)
+
+https://www.youtube.com/watch?v=hYek1xqWzgs&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=26
+
+Aula 22 - Polimorfismo Sobrecarga (Parte 2)
+
+https://www.youtube.com/watch?v=b7xGYh3NHZU&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=27
+
+Aula 23 - Exercícios de POO (Parte 2)
+
+https://www.youtube.com/watch?v=SgubvKWfHKo&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=28
+
+Aula 24 - Exercícios de POO (Parte 3)
+
+https://www.youtube.com/watch?v=h2T5cktV79w&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=30

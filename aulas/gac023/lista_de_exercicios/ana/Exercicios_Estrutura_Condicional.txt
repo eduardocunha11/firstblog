@@ -1,0 +1,152 @@
+﻿cap4_exer7_EstruturaCondicional
+
+//Faça um programa que receba quatro valores: I, A, B e C. Desses valores, I é inteiro e positivo,
+//A, B e C são reais. Escreva os numeros A, B e C obedecendo a tabela a seguir:
+//Suponha que o valor digitado para I seja sempre um valor válido, ou seja, 1, 2 ou 3, e que os
+//numeros digitados sejam diferentes um do outro.
+// Valor de I    Forma a escrever
+//     1        A, B e C crescente
+//     2        A, C e C decrescente
+//     3        maior no meio
+
+#include <stdio.h>
+int main ()
+{
+    int i;
+    float a, b, c;
+    printf("Digite um valor para A: ");
+    scanf("%f", &a);
+    printf("Digite um valor para B: ");
+    scanf("%f", &b);
+    printf("Digite um valor para C: ");
+    scanf("%f", &c);
+    printf("Digite um valor para I: \n 1 - Ordem crescente \n 2 - Ordem decrescente\n 3 - O maior numero no meio\n");
+    scanf("%i", &i);
+    if (i==1)
+        {
+        printf("A ordem crescente e: ");
+        if (a<b && a<c)
+            if (b<c)
+            printf("%.2f, %.2f, %.2f", a,b,c);
+            else
+            printf("%.2f, %.2f, %.2f", a,c,b);
+        if (b<a && b<c)
+            if (a<c)
+            printf("%.2f, %.2f, %.2f", b,a,c);
+            else
+            printf("%.2f, %.2f, %.2f", b,c,a);
+        if (c<a && c<b)
+            if (a<b)
+            printf("%.2f, %.2f, %.2f", c,a,b);
+            else
+            printf("%.2f, %.2f, %.2f", c,b,a);
+        }
+    if (i==2)
+        {
+        printf("A ordem decrescente e: ");
+        if (a>b && a>c)
+            if (b>c)
+            printf("%.2f, %.2f, %.2f", a,b,c);
+            else
+            printf("%.2f, %.2f, %.2f", a,c,b);
+        if (b>a && b>c)
+            if (a>c)
+            printf("%.2f, %.2f, %.2f", b,a,c);
+            else
+            printf("%.2f, %.2f, %.2f", b,c,a);
+        if (c>a && c>b)
+            if (a>b)
+            printf("%.2f, %.2f, %.2f", c,a,b);
+            else
+            printf("%.2f, %.2f, %.2f", c,b,a);
+        }
+    if (i==3)
+        {
+        if (a>b && a>c)
+            printf("A ordem e: %.2f, %.2f, %.2f", b,a,c);
+        if (b>a && b>c)
+            printf("A ordem e: %.2f, %.2f, %.2f", a,b,c);
+        if (c>a && c>b)
+            printf("A ordem e: %.2f, %.2f, %.2f", a,c,b);
+        }
+return 0;
+}
+
+
+cap4_exer12_EstruturaCondicional
+
+
+//Faça um programa que receba o código correspondente ao cargo de um funcionário e seu salário atual e mostre o cargo, o valor
+//do aumento e seu novo salário. Os cargos estão na tabela a seguir:
+//   Código    Cargo        Percentual
+//      1     Escriturário     50%
+//      2     Secretário       35%
+//      3     Caixa            20%
+//      4     Gerente          10%
+//      5     Diretor          Não tem aumento
+
+#include <stdio.h>
+int main ()
+{
+    int c;
+    float sal, au, novo;
+    printf("Digite o cargo do funcionario:\n 1 - Escriturario\n 2 - Secretario\n 3 - Caixa\n 4 - Gerente\n 5 - Diretor\n");
+    scanf("%d", &c);
+    printf("Digite o valor do salario do funcionario: \n");
+    scanf("%f", &sal);
+    switch(c)
+    {
+    case 1:
+        {
+        printf("O cargo e Escriturario\n");
+        au = (sal*50/100);
+        printf("O valor do aumento e: %.2f\n", au);
+        novo = (sal+au);
+        printf("O novo salario e: %.2f\n", novo);
+        break;
+        }
+    case 2:
+        {
+        printf("O cargo e Secretario\n");
+        au = (sal*35/100);
+        printf("O valor do aumento e: %.2f\n", au);
+        novo = (sal+au);
+        printf("O novo salario e: %.2f\n", novo);
+        break;
+        }
+    case 3:
+        {
+        printf("O cargo e Caixa\n");
+        au = (sal*20/100);
+        printf("O valor do aumento e: %.2f\n", au);
+        novo = (sal+au);
+        printf("O novo salario e: %.2f\n", novo);
+        break;
+        }
+    case 4:
+        {
+        printf("O cargo e Gerente\n");
+        au = (sal*10/100);
+        printf("O valor do aumento e: %.2f\n", au);
+        novo = (sal+au);
+        printf("O novo salario e: %.2f\n", novo);
+        break;
+        }
+    case 5:
+        {
+        printf("O cargo e Diretor\n");
+        au = (sal*0);
+        printf("O valor do aumento e: %.2f\n", au);
+        novo = (sal+au);
+        printf("O novo salario e: %.2f\n", novo);
+        break;
+        }
+    default:
+        printf("Codigo de funcionario inexistente!\n");
+    }
+return 0;
+}
+
+
+
+
