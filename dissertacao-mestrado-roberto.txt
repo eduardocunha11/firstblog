@@ -1,0 +1,58 @@
+O documento apresenta a dissertação de mestrado de 
+Roberto César Rodrigues, defendida no Programa de Pós-Graduação em 
+Governança e Transformação Digital da Universidade Federal do Tocantins 
+(UFT), com o título "Desafios de compliance em cibersegurança: um 
+framework para adoção estruturada de Sistema de Gerenciamento de Eventos 
+e Informações de Segurança na Justiça Eleitoral". O trabalho 
+propõe um framework de conformidade para orientar a seleção e 
+implementação de soluções SIEM (Security Information and Event 
+Management) na Justiça Eleitoral, considerando o complexo arcabouço 
+normativo brasileiro. ​
+A pesquisa aborda os desafios técnicos, regulatórios e operacionais 
+na adoção de SIEM, destacando a necessidade de alinhar a tecnologia 
+às exigências legais, como a Lei Geral de Proteção de Dados (LGPD) 
+e normativas do CNJ, TSE e GSI. ​ O framework é estruturado em cinco 
+domínios temáticos: (1) Governança e Gestão Estratégica, (2) Proteção 
+e Governança de Dados, (3) Gestão de Riscos e Continuidade de Negócios, 
+(4) Auditoria, Logs e Transparência, e (5) Gestão de Incidentes 
+Cibernéticos e Resposta. ​
+
+A metodologia utilizada foi a Análise de Conteúdo, com a sistematização 
+de 41 normativas relevantes. O resultado é um conjunto de checkpoints 
+práticos e auditáveis que traduzem as exigências legais em diretrizes 
+operacionais. ​ O trabalho conclui que o framework proposto aumenta a 
+maturidade em cibersegurança, fortalece a governança e contribui para 
+a proteção do processo eleitoral brasileiro. ​
+
+A dissertação também gerou produtos acadêmicos, como um artigo aprovado 
+para apresentação em congresso e um capítulo de livro. Como continuidade, 
+sugere-se a aplicação prática do framework em um Tribunal Regional 
+Eleitoral para validação empírica. ​
+
+- Adicionar na Seção de Fundamentação Teórica
+
+1º) Discutir os dois tipos de SIEM que existem atualmente no mercado: 
+  a) SIEM Tradicional (on-premises) - proposto no trabalho de mestrado;
+  b) SIEM Nativo de nuvem, como no caso do Microsoft Sentinel [2];
+  
+2º) Discutir o uso da IA e algoritmos de Machine Learning para evolução
+    dos SIEMs atuais, para cruzamento de dados e predição de potenciais
+	ameaças futuras baseado nos incidentes históricos passados [3].
+	
+- Adicionar uma Seção de Ameaças à Validade no trabalho, abordando
+os principais desafios de adoção prática do SIEM em termos de 
+custo e complexidade de implementação, além de mão de obra técnica
+especializada:
+
+Custo e complexidade de implementação: Soluções SIEM podem demandar 
+investimentos significativos em licenciamento, infraestrutura e 
+mão de obra especializada. Além disso, é comum enfrentar desafios 
+na integração de múltiplas fontes de dados e no desenvolvimento de 
+regras de correlação eficazes [1].
+
+
+Referências Bibliográficas:
+
+[1] https://clavis.com.br/o-que-e-siem/
+[2] https://www.microsoft.com/pt-br/security/business/security-101/what-is-siem
+[3] https://www.paloaltonetworks.com/cyberpedia/role-of-artificial-intelligence-ai-and-machine-learning-ml-in-siem
